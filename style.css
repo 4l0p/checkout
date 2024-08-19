@@ -112,7 +112,6 @@ header .inner-header .holder-pagseg svg {
 
 .cards {
     margin: 0 auto;
-    border: 1px solid grey;
     display: flex;
     justify-content: center;
     margin-top: 30px;
@@ -121,7 +120,6 @@ header .inner-header .holder-pagseg svg {
 }
 
 .col-checkout-1 {
-    border: 1px solid green;
     width: 32.61%;
 }
 
@@ -270,11 +268,9 @@ input {
 /* fim box card ativo*/ 
 
 .col-checkout-2 {
-    border: 1px solid blue;
     width: 32.61%;
 }
 
 .col-checkout-3 {
-    border: 1px solid yellow;
     width: 32.61%;
 }
