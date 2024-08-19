@@ -252,6 +252,14 @@ button {
     margin-top: 10px;
 }
 
+.flex-adress {
+    display: flex;
+}
+
+.input-flex {
+    width: 50%;
+}
+
 .error-block {
     color: #e50f38;
     display: block;
