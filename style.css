@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* central de controle: cores, tamanhos, estilos, padrão */
+:root {
+    /* colors */
+    --header-bg-color: #000000;
+    --content-bg-color: #f4f6f8 ;
+
+    /* fonts **/
+    --font-main: Helvetica;
+    --text-font: Rubik, sans-serif;
+
+    /* sizes h w */
+    --dektop-width: 1196px;
+}
+
+body {
+    height: 100vh;
+    background-color: var(--content-bg-color) ;
+}
+
+header {
+    background-color: var(--header-bg-color);
+}
+
+header .inner-header {
+    display: flex;
+    justify-content: center;
+}
+
+header .inner-header .holder-logo {
+    width: var(--dektop-width);
+    padding: 30px;
+}
+
+header .inner-header .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+headern .inner-header .logo a {
+    position: relative;
+    text-decoration: none;
+    text-align: center;
+}
+
+header .inner-header .logo .img-logo {
+    width: 165px;
+}
+
+header .inner-header .holder-pagseg {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -70px;
+}
+
+header .inner-header .holder-pagseg svg {
+    width: 90px;
+    height: 20px;
+    margin-left: -30px;
+}
+
+.countdown {
+    background-color: #303030;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.countdown .holder-countdown {
+    width: 1196px;
+}
+
+.countdown .holder-countdown .countdown-text {
+    display: flex;
+    justify-content: center;
+}
+
+.countdown .holder-countdown .countdown-text p {
+    font-family: var(--text-font);
+    font-weight: bold;
+    color: white;
+    font-size: 13px;
+    margin-top: 20px;
+}
+
+.countdown .holder-countdown .countdown-time {
+    color: #ffc926;
+    font-size: 18px;
+    font-family: var(--text-font);
+    display: flex;
+    justify-content: center;
+    padding: 20px 0 20px 0;
+}
+
+.countdown .holder-countdown .countdown-time span {
+    font-weight: 700;
+}
+
+.countdown .holder-countdown .countdown-time svg {
+    width: 14px;
+}
+
+.cards {
+    border: 1px solid grey;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.col-checkout-1 {
+    border: 1px solid green;
+    width: 32.61%;
+}
+
+.identify {
+    border: 2px solid grey;
+    border-radius: 30px;
+}
+
+.col-checkout-2 {
+    border: 1px solid blue;
+    width: 32.61%;
+}
+
+.col-checkout-3 {
+    border: 1px solid yellow;
+    width: 32.61%;
+}
