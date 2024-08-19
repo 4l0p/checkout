@@ -199,62 +199,12 @@ input {
     margin-top: 6px;
 }
 
+input:focus {
+    border: 1px solid grey;
+}
+
 ::placeholder {
     color: #d0d0d0;
-}
-
-.input-group {
-    -webkit-text-size-adjust: 100%;
-    -moz-text-size-adjust: 100%;
-    text-size-adjust: 100%;
-    border-collapse: separate;
-    box-sizing: border-box;
-    display: table;
-    height: 40px;
-    max-width: none;
-    position: relative;
-    width: 100%
-}
-
-.input-group.input-group-prepend .input-group-addon {
-    border-bottom-right-radius: 0;
-    border-right: 0;
-    border-top-right-radius: 0
-}
-
-.input-group.input-group-prepend input {
-    border-bottom-left-radius: 0;
-    border-top-left-radius: 0
-}
-
-.input-group .input-group-addon {
-    -webkit-text-size-adjust: 100%;
-    -moz-text-size-adjust: 100%;
-    text-size-adjust: 100%;
-    background: #f4f6f8;
-    border: 1px solid #d0d0d0;
-    border-collapse: separate;
-    border-radius: 30px;
-    box-sizing: border-box;
-    color: #333;
-    display: table-cell;
-    font-size: 13px;
-    font-weight: 500;
-    height: 40px;
-    line-height: 14px;
-    text-align: center;
-    vertical-align: middle;
-    white-space: nowrap;
-    width: 64px
-}
-
-.input-group input {
-    box-sizing: border-box;
-    display: block;
-    float: left;
-    height: 45px;
-    line-height: 20px;
-    z-index: 2
 }
 
 .error-block {
