@@ -197,14 +197,43 @@ input {
     padding: 16px 20px 15px;
     height: 45px;
     margin-top: 6px;
+    transition: .5s;
 }
 
 input:focus {
-    border: 1px solid grey;
+    border: 1px solid rgb(61, 61, 61);
+    background-color: var(--content-bg-color);
 }
 
 ::placeholder {
     color: #d0d0d0;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+input[type=tel] {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-left: none;
+}
+
+.input-area-cod {
+    border: 1px solid #d0d0d0;
+    height: 45px;
+    width: 64px;
+    background-color: #f4f6f8;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    font-size: 13px;
+    box-sizing: border-box;
 }
 
 .error-block {
