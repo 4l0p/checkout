@@ -211,14 +211,15 @@ input:focus {
 
 .flex {
     display: flex;
-    justify-content: center;
-    align-items: baseline;
+    margin-top: 6px;
 }
 
 input[type=tel] {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
     border-left: none;
+    padding: 10px;
+    margin: 0;
 }
 
 .input-area-cod {
