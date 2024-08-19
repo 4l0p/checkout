@@ -115,37 +115,38 @@
                         <div class="box-title">
                             <div class="holder-number">1</div>
                             <div class="title-card">Identifique-se</div>
-                            <div class="desc">
-                                Utilizaremos seu e-mail para: Identificar seu perfil, histórico de compra, notificação
-                                de
-                                pedidos e carrinho de compras.
-                            </div>
+                        </div>
+                        <div class="desc">
+                            Utilizaremos seu e-mail para: Identificar seu perfil, histórico de compra, notificação
+                            de
+                            pedidos e carrinho de compras.
                         </div>
                         <div class="box-content">
                             <form action="#" method="post">
                                 <div class="form-group">
-                                    <label for="name">Nome completo</label>
+                                    <label for="name" class="label-control">Nome completo</label>
                                     <div class="holder-input">
                                         <input type="text" placeholder="ex.: Maria de Almeida Cruz">
                                     </div>
+                                    <div id="name_errors" class="error-block">Campo obrigatório.</div>
                                 </div>
                                 <div class="form-group">
-                                    <label for="email">E-mail</label>
+                                    <label for="email" class="label-control">E-mail</label>
                                     <div class="holder-input">
                                         <input type="text" placeholder="ex.: maria@gmail.com">
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label for="cpf">CPF</label>
+                                    <label for="cpf" class="label-control">CPF</label>
                                     <div class="holder-input">
                                         <input type="text" placeholder="000.000.000-00">
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label for="tel">Celular / Whatsapp</label>
-                                    <div class="holder-input">
-                                        <span>+55</span>
-                                        <input type="tel" name="tel" id="" placeholder="(00) 00000-0000">
+                                    <label for="tel" class="label-control">Celular / Whatsapp</label>
+                                    <div class="holder-input input-group input-group-prepend">
+                                        <span class="input-group-addon">+55</span>
+                                        <input type="tel" name="tel" placeholder="(00) 00000-0000">
                                     </div>
                                 </div>
                                 <div class="form-group">
