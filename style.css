@@ -124,7 +124,8 @@ header .inner-header .holder-pagseg svg {
 }
 
  /* conjunto card ativo */
-.identify {
+.box-card {
+    margin-top: 24px;
     border: 2px solid grey;
     border-radius: 30px;
     max-width: 385px;
