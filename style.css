@@ -183,7 +183,7 @@ header .inner-header .holder-pagseg svg {
     position: relative;
 }
 
-input {
+input, select {
     width: 100%;
     background-color: #FFFFFF;
     border: 1px solid #d0d0d0;
@@ -258,6 +258,14 @@ button {
 
 .input-flex {
     width: 50%;
+}
+
+.flex-card {
+    display: flex;
+}
+
+.input-flex-card {
+    width: 85%;
 }
 
 .error-block {
