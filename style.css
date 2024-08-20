@@ -337,12 +337,50 @@ input[type="radio"] {
 }
 
 .card-details-info {
-    position: absolute;
     border: 1px solid black;
-    padding: 50px;
+    position: absolute;
     width: 85%;
     left: 7.5%;
-    bottom: 30px;
+    bottom: 30px;   
+    height: 65%;
+}
+
+.card-chip {
+    width: 50px;
+    height: 32px;
+    border-radius: 5px;
+    position: relative;
+    background-color: #b8b8b8;
+}
+
+.card-chip::before {
+    content: " ";
+    display: block;
+    width: 70%;
+    height: 60%;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background: #d9d9d9;
+    position: absolute;
+    top: 20%;
+}
+
+.card-number {
+    font-family: "Inconsolata", monospace;
+    font-weight: 600;
+    font-size: 19px;
+    clear: both;
+    margin-bottom: 30px;
+    color: #FFFFFF;
+    margin-top: 15px;
+    transition: opacity 400ms linear;
+}
+
+.card-name {
+    color: #FFFFFF;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-family: "Inconsolata", monospace;
 }
 
 /* end credit card config */
