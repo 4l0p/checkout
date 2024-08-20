@@ -280,9 +280,15 @@ button {
 /* fim box card ativo*/ 
 
 .col-checkout-2 {
-    width: 32.61%;
+    margin: 0 25px 0 25px;
+}
+
+.card-payment {
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: #f4f6f8;
 }
 
 .col-checkout-3 {
-    width: 32.61%;
+    width: 20%;
 }

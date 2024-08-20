@@ -222,7 +222,7 @@
                     <!-- /address-->
                 </div>
                 <div class="col-checkout-2">
-                    <!-- identify -->
+                    <!-- payment -->
                     <div class="box-card">
                         <div class="box-title">
                             <div class="holder-number">3</div>
@@ -233,59 +233,61 @@
                         </div>
                         <div class="box-content">
                             <form action="#" method="post">
-                                <div class="form-group">
-                                    <label for="card-number" class="label-control">Número do cartão</label>
-                                    <div class="holder-input">
-                                        <input type="text" name="card-number" placeholder="1111 2222 3333 4444">
+                                <div class="card-payment">
+                                    <div class="header-card-payment">
+                                        <input type="radio" name="credit-card" id="">
+                                        <label for="credit-card">Cartão de Crédito</label>
                                     </div>
-                                    <div class="flex-card">
-                                        <div class="form-group input-flex-card">
-                                            <label for="number" class="label-control">Validade (mês/ano)</label>
-                                            <div class="holder-input">
-                                                <input type="text" name="number">
+                                    <div class="form-group">
+                                        <label for="card-number" class="label-control">Número do cartão</label>
+                                        <div class="holder-input">
+                                            <input type="text" name="card-number" placeholder="1111 2222 3333 4444">
+                                        </div>
+                                        <div class="flex-card">
+                                            <div class="form-group input-flex-card">
+                                                <label for="number" class="label-control">Validade (mês/ano)</label>
+                                                <div class="holder-input">
+                                                    <input type="text" name="number">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="bairro" class="label-control">Cód. de Segurança</label>
+                                                <div class="holder-input">
+                                                    <input type="text" name="bairro">
+                                                </div>
                                             </div>
                                         </div>
                                         <div class="form-group">
-                                            <label for="bairro" class="label-control">Cód. de Segurança</label>
+                                            <label for="name" class="label-control">Nome e sobrenome do titular</label>
                                             <div class="holder-input">
-                                                <input type="text" name="bairro">
+                                                <input type="text" placeholder="ex.: Maria de Almeida Cruz">
+                                            </div>
+                                            <div id="name_errors" class="error-block">Campo obrigatório.</div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="cpf-titular" class="label-control">CPF do titular</label>
+                                            <div class="holder-input">
+                                                <input type="text" name="cpf-titular" placeholder="000.000.000-00">
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="name" class="label-control">Nome e sobrenome do titular</label>
-                                        <div class="holder-input">
-                                            <input type="text" placeholder="ex.: Maria de Almeida Cruz">
+                                        <div class="form-group">
+                                            <label for="installments" class="label-control">Nº de Parcelas</label>
+                                            <div class="holder-input flex">
+                                                <select name="installments" id=""></select>
+                                            </div>
                                         </div>
-                                        <div id="name_errors" class="error-block">Campo obrigatório.</div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="cpf-titular" class="label-control">CPF do titular</label>
-                                        <div class="holder-input">
-                                            <input type="text" name="cpf-titular" placeholder="000.000.000-00">
+                                        <div class="form-group">
+                                            <button>comprar agora
+                                            </button>
                                         </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="installments" class="label-control">Nº de Parcelas</label>
-                                        <div class="holder-input flex">
-                                            <select name="installments" id=""></select>
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <button>Continuar
-                                            <svg width="17" height="13" viewBox="0 0 17 13" fill="white"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M10.4913 0.083736L8.9516 1.66506C8.84623 1.7729 8.84652 1.94512 8.95215 2.05271L11.5613 4.71372L0.277266 4.71372C0.124222 4.71372 -3.2782e-07 4.83794 -3.21005e-07 4.99098L-2.22234e-07 7.20921C-2.1542e-07 7.36225 0.124222 7.48648 0.277266 7.48648L11.5613 7.48648L8.95216 10.1475C8.84678 10.2551 8.84652 10.427 8.9516 10.5348L10.4913 12.1162C10.5435 12.1699 10.615 12.2002 10.6899 12.2002C10.7647 12.2002 10.8363 12.1697 10.8884 12.1162L16.5579 6.29335C16.6103 6.23958 16.6366 6.16968 16.6366 6.10008C16.6366 6.03022 16.6103 5.96062 16.5579 5.90655L10.8884 0.083736C10.8363 0.0302186 10.7647 4.91753e-07 10.6899 4.94966e-07C10.615 4.98178e-07 10.5435 0.0302186 10.4913 0.083736Z">
-                                                </path>
-                                            </svg>
-                                        </button>
                                     </div>
                                 </div>
+                                <div class="pix-payment">pix</div>
+                                <div class="title-payment">boleto</div>
                             </form>
                         </div>
                     </div>
-                    <!-- /identify -->
+                    <!-- /payment -->
                 </div>
                 <div class="col-checkout-3">
                     <div class="resume">
