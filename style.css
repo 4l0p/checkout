@@ -406,19 +406,20 @@ input[type="radio"] {
 
 /* PIX config*/ 
 
-.pix-payment {
+.pix-payment, .bill-payment {
     border: 1px solid black;
     margin-top: 15px;
     background-color: #f4f6f8;
     border-radius: 5px;
 }
 
-.header-pix-payment {
+.header-pix-payment, .header-bill-payment {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding-right: 20px;
-    font-size: 14px;
+    font-size: 13px;
+    font-weight: 600;
 }
 
 .off-info {
@@ -437,7 +438,13 @@ input[type="radio"] {
     padding: 10px;
 }
 
-.pix-price {
+.bill-desc {
+    font-size: 13px;
+    font-weight: 600;
+    padding: 12px;
+}
+
+.pix-price, .bill-price {
     color: #037803;
     font-weight: 700;
     padding: 10px;
