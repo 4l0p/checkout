@@ -320,6 +320,11 @@ input[type="radio"] {
 
 .optional {
     font-size: 11px;
+    color: #818181;
+}
+
+.mb {
+    margin-bottom: 20px;
 }
 
 /* credit card config */
@@ -399,6 +404,46 @@ input[type="radio"] {
 
 /* end credit card config */
 
+/* PIX config*/ 
+
+.pix-payment {
+    border: 1px solid black;
+    margin-top: 15px;
+    background-color: #f4f6f8;
+    border-radius: 5px;
+}
+
+.header-pix-payment {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 20px;
+    font-size: 14px;
+}
+
+.off-info {
+    background-color: #000000;
+    color: #FFFFFF;
+    padding: 3.5px;
+    border-radius: 10px;
+    font-size: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.pix-desc {
+    font-size: 14px;
+    font-weight: 600;
+    padding: 10px;
+}
+
+.pix-price {
+    color: #037803;
+    font-weight: 700;
+    padding: 10px;
+}
+
+/* */ 
 /* end payment info */
 
 .col-checkout-3 {
