@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: "Bitstream";
+    src: url(assets/VeraMono.ttf);
+}
+
 /* central de controle: cores, tamanhos, estilos, padrão */
 :root {
     /* colors */
@@ -315,10 +320,6 @@ input[type="radio"] {
 
 /* credit card config */
 
-.card-wrapper {
-    border: 1px solid blue;
-}
-
 .card-unknow-front {
     background-color: #cccccc;
     backface-visibility: hidden;
@@ -330,6 +331,7 @@ input[type="radio"] {
 }
 
 .card-logo {
+    display: none;
     position: absolute;
     right: 5%;
     top: 8%;
@@ -337,7 +339,6 @@ input[type="radio"] {
 }
 
 .card-details-info {
-    border: 1px solid black;
     position: absolute;
     width: 85%;
     left: 7.5%;
@@ -366,9 +367,9 @@ input[type="radio"] {
 }
 
 .card-number {
-    font-family: "Inconsolata", monospace;
+    font-family: "Bitstream", monospace;
     font-weight: 600;
-    font-size: 19px;
+    font-size: 16px;
     clear: both;
     margin-bottom: 30px;
     color: #FFFFFF;
@@ -377,10 +378,19 @@ input[type="radio"] {
 }
 
 .card-name {
+    font-family: "Bitstream", monospace;
     color: #FFFFFF;
-    font-size: 12px;
+    font-size: 13px;
     text-transform: uppercase;
-    font-family: "Inconsolata", monospace;
+    float: left;
+}
+
+.card-expiry {
+    position: relative;
+    width: 20%;
+    float: right;
+    color: #FFFFFF;
+
 }
 
 /* end credit card config */
