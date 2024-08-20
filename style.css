@@ -318,6 +318,10 @@ input[type="radio"] {
     margin-left: 45px;
 }
 
+.optional {
+    font-size: 11px;
+}
+
 /* credit card config */
 
 .card-unknow-front {
