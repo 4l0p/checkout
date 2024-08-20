@@ -8,7 +8,7 @@
 :root {
     /* colors */
     --header-bg-color: #000000;
-    --content-bg-color: #f4f6f8 ;
+    --content-bg-color: #f4f6f8;
     --text-desc: #666666;
     --box-card-bg-color: #FFFFFF;
 
@@ -22,7 +22,7 @@
 
 body {
     height: 100vh;
-    background-color: var(--content-bg-color) ;
+    background-color: var(--content-bg-color);
 }
 
 header {
@@ -123,7 +123,7 @@ header .inner-header .holder-pagseg svg {
     width: 32.61%;
 }
 
- /* conjunto card ativo */
+/* conjunto card ativo */
 .box-card {
     margin-top: 24px;
     border: 2px solid grey;
@@ -183,7 +183,8 @@ header .inner-header .holder-pagseg svg {
     position: relative;
 }
 
-input, select {
+input,
+select {
     width: 100%;
     background-color: #FFFFFF;
     border: 1px solid #d0d0d0;
@@ -243,7 +244,7 @@ button {
     background-color: #047803;
     height: 45px;
     font-size: 16px;
-    font-family: var(--text-font); 
+    font-family: var(--text-font);
     color: #FFFFFF;
     text-transform: uppercase;
     font-weight: 700;
@@ -277,7 +278,10 @@ button {
     text-align: left;
 }
 
-/* fim box card ativo*/ 
+/* fim box card ativo*/
+
+
+/* payment info */
 
 .col-checkout-2 {
     margin: 0 25px 0 25px;
@@ -288,6 +292,62 @@ button {
     border-radius: 5px;
     background-color: #f4f6f8;
 }
+
+input[type="radio"] {
+    height: 16px;
+    width: 16px;
+    margin: 15px;
+}
+
+.type-payment {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.cards-logo-type-payment {
+    display: flex;
+    justify-content: space-around;
+    width: 220px;
+    margin-left: 45px;
+}
+
+/* credit card config */
+
+.card-wrapper {
+    border: 1px solid blue;
+}
+
+.card-unknow-front {
+    background-color: #cccccc;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    height: 184px !important;
+    transform: scale(.8) !important;
+    width: 100% !important;
+    border-radius: 10px;
+}
+
+.card-logo {
+    position: absolute;
+    right: 5%;
+    top: 8%;
+    transition: 400ms;
+}
+
+.card-details-info {
+    position: absolute;
+    border: 1px solid black;
+    padding: 50px;
+    width: 85%;
+    left: 7.5%;
+    bottom: 30px;
+}
+
+/* end credit card config */
+
+/* end payment info */
 
 .col-checkout-3 {
     width: 20%;
