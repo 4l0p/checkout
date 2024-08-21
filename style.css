@@ -611,3 +611,60 @@ input[type="radio"] {
     text-align: center;
     width: 100%;
 }
+
+/* testemonials */ 
+
+.testimonials {
+    background: #fff;
+    border-radius: 30px;
+    box-sizing: border-box;
+}
+
+.box-testimonial {
+    border-bottom: 1px dashed #e5e5e5;
+    display: flex;
+    padding: 10px 0 5px;
+    width: 100%;
+}
+
+.box-testimonial__photo {
+    background: #fff;
+    display: inline-block;
+    width: 60px;
+}
+
+.photo {
+    border-radius: 50%;
+    display: inline-block;
+    width: 100%;
+}
+
+.box-testimonial__infos {
+    width: 180px;
+}
+
+.ml15 {
+    margin-left: 15px;
+}
+
+.ml20 {
+    margin-left: 20px;
+}
+
+.pull-left {
+    float: left;
+}
+
+.infos__name, .box-testimonial__infos .infos__text {
+    letter-spacing: -.53px;
+    line-height: 20px;
+    font-size: 13px;
+}
+
+.black-60 {
+    color: #666 !important;
+}
+
+p:not(.-custom-margin) {
+    margin-bottom: 10px;
+}
