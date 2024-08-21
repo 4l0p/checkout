@@ -23,6 +23,7 @@
 
     /* sizes h w */
     --dektop-width: 1196px;
+    --max-width-col: 370px;
 }
 
 body {
@@ -121,16 +122,37 @@ header .inner-header .holder-pagseg svg {
 
 .cards {
     margin: 0 auto;
-    display: flex;
-    justify-content: center;
     margin-top: 30px;
     font-family: var(--text-font);
     max-width: var(--dektop-width);
 }
 
+/* colunas config */
+
 .col-checkout-1 {
-    width: 32.61%;
+    float: left;
+    max-width: var(--max-width-col);
 }
+
+.col-checkout-2 {
+    float: left;
+    margin: 0 40px 0 40px;
+    max-width: var(--max-width-col);
+}
+
+.col-checkout-3 {
+    float: left;
+    width: 29.5%;
+    max-width: var(--max-width-col);
+}
+
+.col-checkout-4 {
+    float: left;
+    width: 29.5%;
+    max-width: var(--max-width-col);
+}
+
+/* configurações colunas */
 
 /* conjunto card ativo */
 .box-card {
@@ -287,10 +309,6 @@ button {
 
 
 /* payment info */
-
-.col-checkout-2 {
-    margin: 0 25px 0 25px;
-}
 
 .card-payment {
     border: 1px solid black;
@@ -452,10 +470,6 @@ input[type="radio"] {
 
 /* */ 
 /* end payment info */
-
-.col-checkout-3 {
-    width: 30%;
-}
 
 .box-card-resume {
     margin-top: 24px;
@@ -680,6 +694,7 @@ p:not(.-custom-margin) {
 /* end testemonials */
 
 footer {
+    clear: both;
     color: black;
     padding: 30px 0 0;
     text-align: center;
@@ -729,22 +744,13 @@ footer .-payment-list img {
 
 /*  responsive media controls */
 
-@media (max-width: 1060px) {
+@media (max-width: 1200px) {
     .cards {
         display: flex;
-        flex-direction: column;
-        justify-content: center;
         align-items: center;
-        width: 100%;
-    }
-
-    .col-checkout-1, .col-checkout-2, .col-checkout-3 {
-        width: 85%;
-        display: flex; 
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
     }
 }
+
 
 /* end responsive media controls */ 
