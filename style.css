@@ -631,6 +631,10 @@ input[type="radio"] {
     width: 100%;
 }
 
+.box-testimonial:last-child {
+    border: 0;
+}
+
 .box-testimonial__photo {
     background: #fff;
     display: inline-block;
