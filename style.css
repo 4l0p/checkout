@@ -30,6 +30,10 @@ body {
     background-color: var(--content-bg-color);
 }
 
+.container {
+    padding-bottom: 30px;
+}
+
 header {
     background-color: var(--header-bg-color);
 }
@@ -667,4 +671,54 @@ input[type="radio"] {
 
 p:not(.-custom-margin) {
     margin-bottom: 10px;
+}
+
+/* end testemonials */
+
+footer {
+    color: black;
+    padding: 30px 0 0;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+footer {
+    transition: all .4s;
+}
+
+.-title {
+    font-family: var(--text-font);
+    font-size: 13px;
+}
+
+.-payment-list {
+    margin: 8px var(--negative-payment-list-spacing, 1px);
+}
+
+footer .-payment-list img {
+    display: inline-block;
+    height: var(--payment-img-height, 26px);
+    margin: var(--payment-list-spacing, 6px);
+    width: var(--payment-img-width, 39px);
+}
+
+.store-info-holder {
+    font-family: var(--text-font);
+    font-size: 10px;
+}
+
+.-store-name {
+    margin-bottom: 5px;
+}
+
+.security-label {
+    margin-top: 25px;
+}
+
+.black-svg {
+    fill: rgb(0, 0, 0);
+}
+
+.hide {
+    display: none;
 }
