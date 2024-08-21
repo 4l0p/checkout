@@ -726,3 +726,17 @@ footer .-payment-list img {
 .hide {
     display: none;
 }
+
+/*  responsive media controls */
+
+@media (max-width: 1060px) {
+    .cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+}
+
+/* end responsive media controls */ 
