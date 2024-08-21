@@ -530,10 +530,84 @@ input[type="radio"] {
 
 .item-detail {
     font-size: 12px;
-    padding: 0 10px 10px 10px;
+    padding: 0 10px 10px 25px;
 }
 
 .item-name {
     line-height: 1.4;
+    color: #666666;
+    margin-bottom: 10px;
 }
 
+.item-row{
+    margin-bottom: 20px;
+}
+
+.item-variation {
+    display: inline-block;
+    line-height: 1.4;
+    margin-left: -3px;
+    padding: 0 3px;
+    font-weight: 700;
+    color: #666666;
+}
+
+.item-price {
+    line-height: 1.4;
+    color:#333;
+    font-weight: 600;
+}
+
+.item-quantity-selector-holder {
+    margin-top: 11px;
+    max-width: 180px;
+    position: relative;
+}
+
+.relative {
+    position: relative;
+}
+
+.switch-control {
+    font-size: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.switch-control.less {
+    left: 0;
+    padding: 16px 17px;
+}
+
+.icon {
+    display: inline-block;
+}
+
+.icon-less {
+    background: url(assets/quantity-less.svg) no-repeat;
+    height: 2px;
+    width: 15px;
+}
+
+.icon-more {
+    background: url(assets/quantity-more.svg) no-repeat;
+    height: 15px;
+    width: 15px;
+}
+
+.switch-control.more {
+    padding: 10px 17px;
+    right: 0;
+}
+
+.input-quantity {
+    background-color: #f5f5f5;
+    border: 0;
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0;
+    padding: 9px;
+    text-align: center;
+    width: 100%;
+}
