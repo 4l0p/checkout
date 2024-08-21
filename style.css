@@ -258,16 +258,12 @@ button {
     margin-top: 10px;
 }
 
-.flex-adress {
+.flex {
     display: flex;
 }
 
 .input-flex {
     width: 50%;
-}
-
-.flex-card {
-    display: flex;
 }
 
 .input-flex-card {
@@ -276,7 +272,7 @@ button {
 
 .error-block {
     color: #e50f38;
-    display: block;
+    display: none;
     font-size: 11px;
     line-height: 1.3;
     margin: 7px 0 0;
@@ -454,5 +450,90 @@ input[type="radio"] {
 /* end payment info */
 
 .col-checkout-3 {
-    width: 20%;
+    width: 30%;
 }
+
+.box-card-resume {
+    margin-top: 24px;
+    border-radius: 30px;
+    max-width: 385px;
+    padding: 30px;
+    background-color: var(--box-card-bg-color);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, .05);
+}
+
+.no-bold {
+    font-weight: 500;
+}
+
+.input-cupom {
+    height: 10px;
+    width: 70%;
+}
+
+.btn-cupom {
+    background-color: transparent;
+    color: #666666;
+    font-size: 13px;
+    font-weight: 600;
+    width: 0;
+    height: 0;
+    margin-left: 5px;
+}
+
+.btn-cupom:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.cart-resume {
+    margin-top: 25px;
+    background: #f4f6f8;
+    border-radius: 4px;
+    font-weight: 500;
+    padding: 20px;
+}
+
+.detail {
+    align-items: baseline;
+    color: #333;
+    display: flex;
+    font-size: 12px;
+    justify-content: space-between;
+    line-height: 1;
+    padding: 9px 0;
+}
+
+.total {
+    color: #037803;
+    font-weight: 600;
+}
+
+.value-total {
+    font-size: 16px;
+    font-weight: 600;    
+}
+
+.container-cart-resume {
+    display: flex;
+    flex-direction: row;
+    margin-top: 25px;
+}
+
+.item-image {
+    width: 60px;
+}
+
+.thumb-product {
+    width: 60px;
+}
+
+.item-detail {
+    font-size: 12px;
+    padding: 0 10px 10px 10px;
+}
+
+.item-name {
+    line-height: 1.4;
+}
+

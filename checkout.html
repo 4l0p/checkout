@@ -187,7 +187,7 @@
                                         <input type="text" placeholder="">
                                     </div>
                                 </div>
-                                <div class="flex-adress">
+                                <div class="flex">
                                     <div class="form-group input-flex">
                                         <label for="number" class="label-control">Número</label>
                                         <div class="holder-input">
@@ -202,7 +202,8 @@
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label for="complement" class="label-control">Complemento <span class="optional">(opicional)</span> </label>
+                                    <label for="complement" class="label-control">Complemento <span
+                                            class="optional">(opicional)</span> </label>
                                     <div class="holder-input">
                                         <input type="text" name="complement">
                                     </div>
@@ -263,7 +264,8 @@
                                                     <div class="card-chip"></div>
                                                     <div class="card-number">•••• •••• •••• ••••</div>
                                                     <div class="card-name">NOME E SOBRENOME</div>
-                                                    <div class="card-expiry" data-before="mês/ano" data-after="validade">••/••</div>
+                                                    <div class="card-expiry" data-before="mês/ano"
+                                                        data-after="validade">••/••</div>
                                                 </div>
                                             </div>
                                         </div>
@@ -274,9 +276,10 @@
                                         <div class="holder-input">
                                             <input type="text" name="card-number" placeholder="1111 2222 3333 4444">
                                         </div>
-                                        <div class="flex-card">
+                                        <div class="flex">
                                             <div class="form-group input-flex-card">
-                                                <label for="number" class="label-control">Validade <span class="optional">(mês/ano)</span></label>
+                                                <label for="number" class="label-control">Validade <span
+                                                        class="optional">(mês/ano)</span></label>
                                                 <div class="holder-input">
                                                     <input type="text" name="number">
                                                 </div>
@@ -320,10 +323,11 @@
                                             <label for="pix" class="label-control">Pix</label>
                                         </div>
                                         <div class="off-info">
-                                           <span>5% de desconto</span>
+                                            <span>5% de desconto</span>
                                         </div>
                                     </div>
-                                    <div class="pix-desc">A confirmação de pagamento é realizada em poucos minutos. Utilize o aplicativo do seu banco para pagar.</div>
+                                    <div class="pix-desc">A confirmação de pagamento é realizada em poucos minutos.
+                                        Utilize o aplicativo do seu banco para pagar.</div>
                                     <div class="pix-price">
                                         Valor no Pix: <span class="cart-total">R$ 427,52</span>
                                     </div>
@@ -338,7 +342,9 @@
                                             <label for="boleto" class="label-control">Boleto</label>
                                         </div>
                                     </div>
-                                    <div class="bill-desc">Somente quando recebermos a confirmação, em até 48h após o pagamento, seguiremos com o envio das suas compras. O prazo de entrega passa a ser contado somente após a confirmação do pagamento.</div>
+                                    <div class="bill-desc">Somente quando recebermos a confirmação, em até 48h após o
+                                        pagamento, seguiremos com o envio das suas compras. O prazo de entrega passa a
+                                        ser contado somente após a confirmação do pagamento.</div>
                                     <div class="bill-price">
                                         Valor no boleto: <span class="cart-total">R$ 449,50</span>
                                     </div>
@@ -352,45 +358,73 @@
                     <!-- /payment -->
                 </div>
                 <div class="col-checkout-3">
-                    <div class="resume">
+                    <div class="box-card-resume">
                         <div class="box-title">
-                            <div class="holder-number">3</div>
-                            <div class="title-card">Pagamento</div>
-                            <div class="desc">
-                                Preencha suas informações pessoais para continuar.
-                            </div>
+                            <div class="title-card no-bold">resumo</div>
                         </div>
                         <div class="box-content">
                             <form action="#" method="post">
                                 <div class="form-group">
-                                    <label for="name">Nome completo</label>
-                                    <div class="holder-input">
-                                        <input type="text" placeholder="ex.: Maria de Almeida Cruz">
+                                    <label for="cupom" class="label-control">Tem um cupom?</label>
+                                    <div class="holder-input-cupom"> 
+                                        <input type="text" name="cupom" class="input-cupom" placeholder="Código do cupom">
+                                        <button type="submit" class="btn-cupom">Adicionar</button>
                                     </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="email">E-mail</label>
-                                    <div class="holder-input">
-                                        <input type="text" placeholder="ex.: maria@gmail.com">
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="cpf">CPF</label>
-                                    <div class="holder-input">
-                                        <input type="text" placeholder="000.000.000-00">
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="tel">Celular / Whatsapp</label>
-                                    <div class="holder-input">
-                                        <span>+55</span>
-                                        <input type="tel" name="tel" id="" placeholder="(00) 00000-0000">
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <button>Continuar -></button>
+                                    <div id="name_errors" class="error-block">Campo obrigatório.</div>
                                 </div>
                             </form>
+                            <div class="cart-resume">
+                                <div class="detail">
+                                    <div class="description">Produtos</div>
+                                    <div class="value">R$ 449,50</div>
+                                </div>
+                                <div class="detail">
+                                    <div class="description">Frete</div>
+                                    <div class="value"> + R$ 9,90</div>
+                                </div>
+                                <div class="detail total">
+                                    <div class="description">Total</div>
+                                    <div class="value value-total">R$ 459,40</div>
+                                </div>
+                            </div>
+                            <div class="container-cart-resume">
+                                <div class="item-image">
+                                    <img src="https://cdn.shopify.com/s/files/1/0731/0776/7569/files/MRMAVERICK-1650_ebc67117-7d53-41fb-ab1b-f800dc501243_250x250.jpg"
+                                        alt="Camiseta Algodão Egípcio" class="thumb-product">
+                                </div>
+
+                                <div class="item-detail">
+                                    <div class="item-row">
+                                        <div class="item-name">Camiseta Algodão Egípcio</div>
+                                        <div class="item-delete"></div>
+                                    </div>
+                                    <div class="item-row bold c-text-secondary">
+                                        <span class="item-variation">Tamanho: P</span>
+                                        <span class="item-variation">Cor: Branco</span>
+                                        <span class="item-variation">Estilo (Logo Marca Peitoral): Com logo</span>
+                                    </div>
+
+                                    <div class="item-row item-holder-quantity-price medium">
+                                        <span class="item-price"> R$ 109,90</span>
+                                    </div>
+
+                                    <div class="item-row">
+                                        <div class="item-quantity-selector-holder js-item-quantity-selector-holder">
+                                            <div class="relative">
+                                                <a href="javascript:" class="switch-control less">
+                                                    <i class="icon icon-less"></i>
+                                                </a>
+
+                                                <a href="javascript:" class="switch-control more">
+                                                    <i class="icon icon-more"></i>
+                                                </a>
+                                                <input type="text" class="input-quantity js-input-quantity  " value="1">
+                                            </div>
+                                            <div class="error-item red f11 hide text-center"></div>
+                                        </div><!-- /.holder-elements -->
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
