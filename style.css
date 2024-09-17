@@ -852,6 +852,11 @@ footer .-payment-list img {
 /*  responsive media controls */
 
 @media (max-width: 1200px) {
+
+    header .inner-header .holder-logo {
+        width: 380px;
+    }
+    
     .inner-header {
         width: 100%;
         padding-right: 10px;
