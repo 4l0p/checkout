@@ -26,8 +26,8 @@
     --text-font: Rubik, sans-serif;
 
     /* sizes h w */
-    --dektop-width: 1532px;
-    --max-width-col: 500px;
+    --dektop-width: 1196px;
+    --max-width-col: 380px;
 }
 
 body {
