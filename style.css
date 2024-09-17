@@ -163,7 +163,6 @@ header .inner-header .holder-pagseg svg {
     margin-top: 24px;
     border: 2px solid grey;
     border-radius: 30px;
-    /* max-width: 385px; */
     padding: 30px;
     background-color: var(--box-card-bg-color);
 }
@@ -874,6 +873,18 @@ footer .-payment-list img {
         margin-top: 20px;
     }
 
+    .cards .col-3 {
+        order: 0;
+    }
+
+    .cards .col-1 {
+        order: 1;
+    }
+
+    .cards .col-4 {
+        order: 3;
+    }
+
     .steps-checkout {
         display: block !important;
         list-style: none;
@@ -928,6 +939,18 @@ footer .-payment-list img {
         width: 90%;
     }
 
+    .col-mobile-hide {
+        display: none;
+    }
+
+}
+
+@media (max-width: 520px) { 
+
+    .col-checkout-2 {
+        display: none;
+    }
+    
 }
 
 
