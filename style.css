@@ -26,8 +26,8 @@
     --text-font: Rubik, sans-serif;
 
     /* sizes h w */
-    --dektop-width: 1196px;
-    --max-width-col: 370px;
+    --dektop-width: 1532px;
+    --max-width-col: 500px;
 }
 
 body {
@@ -163,7 +163,7 @@ header .inner-header .holder-pagseg svg {
     margin-top: 24px;
     border: 2px solid grey;
     border-radius: 30px;
-    max-width: 385px;
+    /* max-width: 385px; */
     padding: 30px;
     background-color: var(--box-card-bg-color);
 }
@@ -847,6 +847,7 @@ footer .-payment-list img {
 
 .hide {
     display: none;
+    display: none;
 }
 
 /*  responsive media controls */
@@ -856,6 +857,25 @@ footer .-payment-list img {
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+
+    .steps-checkout {
+        display: block !important;
+        list-style: none;
+        max-width: 500px;
+        width: 90%;
+    }
+
+    .steps-checkout .checkout-step {
+        float: left;
+        text-align: center;
+        width: 33.333333%;
+    }
+
+    .steps-checkout .checkout-step .progress-bar {
+        height: 2px;
+        background-color: #000000;
+        width: 100%;
     }
 
     .col-checkout-1,
