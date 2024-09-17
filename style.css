@@ -857,6 +857,11 @@ footer .-payment-list img {
         padding-right: 10px;
     }
 
+    header .inner-header .holder-pagseg svg {
+        height: 13px;
+        width: 65px;
+    }
+
     .cards {
         display: flex;
         flex-direction: column;
