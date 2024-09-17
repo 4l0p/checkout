@@ -853,6 +853,11 @@ footer .-payment-list img {
 /*  responsive media controls */
 
 @media (max-width: 1200px) {
+    .inner-header {
+        width: 100%;
+        padding-right: 10px;
+    }
+
     .cards {
         display: flex;
         flex-direction: column;
@@ -873,12 +878,12 @@ footer .-payment-list img {
     }
 
     .steps-checkout .checkout-step .progress-bar {
-    background-color: #858585;
-    height: 2px;
-    left: 0;
-    position: relative;
-    top: 17px;
-    width: 100%;
+        background-color: #858585;
+        height: 2px;
+        left: 0;
+        position: relative;
+        top: 17px;
+        width: 100%;
     }
 
     .info {
