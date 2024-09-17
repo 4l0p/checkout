@@ -862,7 +862,7 @@ footer .-payment-list img {
     .steps-checkout {
         display: block !important;
         list-style: none;
-        max-width: 500px;
+        max-width: 400px;
         width: 90%;
     }
 
@@ -873,9 +873,17 @@ footer .-payment-list img {
     }
 
     .steps-checkout .checkout-step .progress-bar {
-        height: 2px;
-        background-color: #000000;
-        width: 100%;
+    background-color: #858585;
+    height: 2px;
+    left: 0;
+    position: relative;
+    top: 14px;
+    width: 100%;
+    }
+
+    .info {
+        font-size: 12px;
+        font-weight: 600;
     }
 
     .steps-checkout .checkout-step.disabled {
