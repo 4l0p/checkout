@@ -844,7 +844,7 @@ footer .-payment-list img {
     fill: rgb(0, 0, 0);
 }
 
-.hide {
+.hide, .itens-count-mobile, .resume-description, .total-cart-mobile, .icon-accordion {
     display: none;
 }
 
@@ -875,6 +875,37 @@ footer .-payment-list img {
 
     .cards .col-3 {
         order: 0;
+    }
+
+    .flex-mobile {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .cards .col-3-closed {
+        background-color: #e3e8ed;
+        padding: 12px 25px 12px 25px;
+        box-shadow: 0 0px 2px rgba(0, 0, 0, .05);
+    }
+
+    .title-card-mobile, .itens-count-mobile {
+        display: contents;
+        font-size: 12px;
+        font-weight: 600;
+        padding: 0;
+    }
+
+    .resume-description {
+        display: table-cell;
+        font-size: 11px;
+        color: #666666;
+    }
+
+    .total-cart-mobile {
+        display: contents;
+        color: #037803;
+        font-weight: 700;
     }
 
     .cards .col-1 {
