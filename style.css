@@ -887,6 +887,7 @@ footer .-payment-list img {
         background-color: #e3e8ed;
         padding: 12px 25px 12px 25px;
         box-shadow: 0 0px 2px rgba(0, 0, 0, .05);
+        transition: .5s;
     }
 
     .title-card-mobile, .itens-count-mobile {
