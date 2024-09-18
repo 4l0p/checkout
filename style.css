@@ -536,6 +536,10 @@ input[type="radio"] {
     display: inline-block;
 }
 
+.order-bump-item-spinner {
+    display: flex;
+}
+
 .order-bump-prod {
     background-color: var(--ob-bg-color);
     border: 1px dashed var(--ob-border-color);
