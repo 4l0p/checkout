@@ -1016,7 +1016,7 @@ footer .-payment-list img {
 
 @media (max-width: 520px) { 
 
-    .container, .cards {
+    body, .container, .cards {
         width: 100%;
     }
 
@@ -1037,6 +1037,7 @@ footer .-payment-list img {
         padding-left: 14px;
         padding-right: 14px;
         width: auto;
+        transition: .2s;
     }
 }
 
