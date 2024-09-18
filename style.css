@@ -1016,11 +1016,31 @@ footer .-payment-list img {
 
 @media (max-width: 520px) { 
 
+    .container, .cards {
+        width: 100%;
+    }
+
     .col-checkout-2 {
         display: none;
     }
-    
+
+    .col-checkout-1 {
+        width: auto;
+    }
+
+    .box-identify-mobile {
+        border: 0;
+        border-radius: 0;
+        border-top: 1px solid #eee;
+        box-shadow: none;
+        margin-top: 20px;
+        padding-left: 14px;
+        padding-right: 14px;
+        width: auto;
+    }
 }
+
+
 
 
 /* end responsive media controls */
