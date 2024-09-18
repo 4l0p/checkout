@@ -484,6 +484,7 @@ input[type="radio"] {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 10px;
 }
 
 .order-bump-promo {
@@ -511,6 +512,7 @@ input[type="radio"] {
     padding: 0;
     width: 35px;
     text-align: center;
+    cursor: pointer;
 }
 
 .arrow-bg i {
