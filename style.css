@@ -938,7 +938,7 @@ footer .-payment-list img {
     fill: rgb(0, 0, 0);
 }
 
-.hide, .itens-count-mobile, .resume-description, .total-cart-mobile, .icon-accordion {
+.hide {
     display: none;
 }
 
@@ -1072,15 +1072,18 @@ footer .-payment-list img {
         order: 1;
     }
 
+    .cards .col-2 {
+        order: 2;
+    }
+
     .cards .col-4 {
         order: 3;
         max-width: 385px;
     } 
 
-    .col-mobile-hide {
+    .hide {
         display: none;
     }
-
 }
 
 @media (max-width: 520px) { 
@@ -1089,15 +1092,18 @@ footer .-payment-list img {
         width: 100%;
     }
 
-    .col-checkout-2 {
-        display: none;
-    }
-
     .col-checkout-1 {
         width: auto;
     }
 
-    .box-identify-mobile {
+    .col-checkout-2 {
+        visibility: visible;
+        width: auto;
+        padding: 0;
+        margin: 0;
+    }
+
+    .box-model-mobile {
         border: 0;
         border-radius: 0;
         border-top: 1px solid #eee;
@@ -1107,6 +1113,10 @@ footer .-payment-list img {
         padding-right: 14px;
         width: auto;
         transition: .2s;
+    }
+
+    .hide {
+        display: none;
     }
 }
 
