@@ -1,17 +1,28 @@
 const formIdentify = document.getElementById('identify')
 const formName = document.getElementById('name')
+const formEmail = document.getElementById('email')
 
 formIdentify.addEventListener('focusout', (e) => { checkInputs() }, true)
 formIdentify.addEventListener('focusin', (e) => { clearInputs() }, true)
-formIdentify.addEventListener('click', (e) => { clearInputs() }, true)
+formIdentify.addEventListener('focus', (e) => { clearInputs() }, true)
+formIdentify.addEventListener('submit', (e) => { 
+    e.preventDefault()
+    clearInputs()
+ }, true)
 
 function checkInputs(input, message) {
     const name = formName.value.trim()
+    const email = formEmail.value.trim()
 
     if(name === '') {
         errorValidation(formName, "Preencha esse campo")
     } else {
         sucessValidation(formName)
+    }
+    if(email === '') {
+        errorValidation(formEmail, "Preencha esse campo")
+    } else {
+        sucessValidation(formEmail)
     }
 }
 
