@@ -330,6 +330,24 @@ button {
     width: 85%;
 }
 
+.img-sucess {
+    position: absolute;
+    top: 17px;
+    right: 9px;
+    visibility: visible;
+}
+
+.img-error {
+    position: absolute;
+    top: 17px;
+    right: 9px;
+    visibility: visible;
+}
+
+.ap1 {
+    top: 11px;
+}
+
 .error-block {
     color: #e50f38;
     display: none;
@@ -1057,7 +1075,7 @@ footer .-payment-list img {
     .cards .col-4 {
         order: 3;
         max-width: 385px;
-    }
+    } 
 
     .col-mobile-hide {
         display: none;
