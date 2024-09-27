@@ -1,49 +1,71 @@
 const formIdentify = document.getElementById('identify')
 const formName = document.getElementById('name')
 const formEmail = document.getElementById('email')
+const formCPF = document.getElementById('cpf')
 
-formName.addEventListener('focusout', (e) => { checkInputs() }, true)
-//formIdentify.addEventListener('focusin', (e) => { clearInputs() }, true)
-//formIdentify.addEventListener('focus', (e) => { clearInputs() }, true)
-formIdentify.addEventListener('submit', (e) => { 
-    //e.preventDefault()
-    clearInputs()
- }, true)
+formName.addEventListener('focusout', (e) => { checkName() }, true)
+formEmail.addEventListener('focusout', (e) => { checkEmail() }, true)
+formCPF.addEventListener('focusout', (e) => { checkInputs() }, true)
 
-function checkInputs(input, message) {
+// formIdentify.addEventListener('submit', (e) => { 
+//     //e.preventDefault()
+//     clearInputs()
+//  }, true)
+
+function checkName() {
     const name = formName.value.trim()
-    const email = formEmail.value.trim()
-
     if(name === '') {
-        errorValidation(formName, "Preencha esse campo")
+        errorName(formName, "Preencha esse campo")
     } else {
-        sucessValidation(formName)
+        sucessName(formName)
     }
-    // if(email === '') {
-    //     errorValidation(formEmail, "Preencha esse campo")
-    // } else {
-    //     sucessValidation(formEmail)
-    // }
 }
 
-function errorValidation(input, message) {
+function checkEmail() {
+    const email = formEmail.value.trim()
+    if(email === '') {
+        errorEmail(formEmail, "Preencha esse campo")
+    } else {
+        sucessEmail(formEmail)
+    }
+}
+
+function errorName(input, message) {
     const formControl = input.parentElement;
     const small = formControl.querySelector('small')
     const icon_error = formControl.querySelector('.img-error')
     small.innerText = message
     formName.className = 'input_error'
-   // formEmail.className = 'input_error'
     icon_error.style.visibility = 'visible'
 }
 
-function sucessValidation(input) {
+function sucessName(input) {
     const formControl = input.parentElement;
     const small = formControl.querySelector('small')
     const icon_sucess = formControl.querySelector('.img-sucess')
     const icon_error = formControl.querySelector('.img-error')
     small.innerText = ''
     formName.className = 'input_sucess'
-    // formEmail.className = 'input_sucess'
+    icon_error.style.visibility = 'hidden'
+    icon_sucess.style.visibility = 'visible'
+}
+
+function errorEmail(input, message) {
+    const formControl = input.parentElement;
+    const small = formControl.querySelector('small')
+    const icon_error = formControl.querySelector('.img-error')
+    small.innerText = message
+    formEmail.className = 'input_error'
+    icon_error.style.visibility = 'visible'
+}
+
+function sucessEmail(input) {
+    const formControl = input.parentElement;
+    const small = formControl.querySelector('small')
+    const icon_sucess = formControl.querySelector('.img-sucess')
+    const icon_error = formControl.querySelector('.img-error')
+    small.innerText = ''
+    formEmail.className = 'input_sucess'
     icon_error.style.visibility = 'hidden'
     icon_sucess.style.visibility = 'visible'
 }
