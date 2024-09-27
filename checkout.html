@@ -144,7 +144,7 @@
                             pedidos e carrinho de compras.
                         </div>
                         <div class="box-content">
-                            <form id="identify" action="#">
+                            <form id="identify" action="checkout.html" method="get">
                                 <div class="form-group">
                                     <label for="name" class="label-control">Nome completo</label>
                                     <div class="holder-input">
@@ -158,15 +158,16 @@
                                 <div class="form-group">
                                     <label for="email" class="label-control">E-mail</label>
                                     <div class="holder-input">
-                                        <input type="text" id="email" placeholder="ex.: maria@gmail.com">
+                                        <input type="text" id="email" name="email" placeholder="ex.: maria@gmail.com">
                                         <i class="img-sucess"><img src="assets/sucess-icon.svg" alt=""></i>
                                         <i class="img-error"><img src="assets/erro-icon.svg" alt=""></i>
+                                        <small id="name_errors"></small>
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label for="cpf" class="label-control">CPF</label>
                                     <div class="holder-input">
-                                        <input type="text" placeholder="000.000.000-00">
+                                        <input type="text" id="cpf" name="cpf" placeholder="000.000.000-00">
                                         <i class="img-sucess"><img src="assets/sucess-icon.svg" alt=""></i>
                                         <i class="img-error"><img src="assets/erro-icon.svg" alt=""></i>
                                     </div>
@@ -175,7 +176,7 @@
                                     <label for="tel" class="label-control">Celular / Whatsapp</label>
                                     <div class="holder-input flex">
                                         <span class="input-area-cod">+55</span>
-                                        <input type="tel" name="tel" placeholder="(00) 00000-0000">
+                                        <input type="tel" id="tel" name="tel" placeholder="(00) 00000-0000">
                                         <i class="img-sucess ap1"><img src="assets/sucess-icon.svg" alt=""></i>
                                         <i class="img-error ap1"><img src="assets/erro-icon.svg" alt=""></i>
                                     </div>
@@ -282,18 +283,16 @@
                                             <label for="credit-card" class="label-control">Cartão de Crédito</label>
                                         </div>
                                         <div class="cards-logo-type-payment">
-                                            <img src="https://github.bubbstore.com/svg/card-amex.svg" height="20"
-                                                alt="American Express" class="card-icon">
-                                            <img src="https://github.bubbstore.com/svg/card-visa.svg" height="20"
+                                            <img src="./assets/card-mastercard.svg" height="20"
+                                            alt="Mastercard" class="card-icon">
+                                            <img src="./assets/card-visa.svg" height="20"
                                                 alt="Visa" class="card-icon">
-                                            <img src="https://github.bubbstore.com/svg/card-diners.svg" height="20"
+                                                <img src="./assets/card-elo.svg" height="20"
+                                                    alt="Elo" class="card-icon">
+                                            <img src="./assets/card-amex.svg" height="20"
+                                                alt="American Express" class="card-icon">
+                                                <img src="./assets/card-diners.svg" height="20"
                                                 alt="Diners" class="card-icon">
-                                            <img src="https://github.bubbstore.com/svg/card-mastercard.svg" height="20"
-                                                alt="Mastercard" class="card-icon">
-                                            <img src="https://github.bubbstore.com/svg/card-discover.svg" height="20"
-                                                alt="Discover" class="card-icon">
-                                            <img src="https://github.bubbstore.com/svg/card-aura.svg" height="20"
-                                                alt="Aura" class="card-icon">
                                         </div>
                                     </div>
                                     <!-- credit card magic -->
@@ -639,17 +638,17 @@
                     Formas de pagamento
                 </div>
                 <div class="-payment-list">
-                    <img alt="mastercard" width="39" height="26" src="https://icons.yampi.me/svg/card-mastercard.svg">
+                    <img alt="mastercard" width="39" height="26" src="./assets/card-mastercard.svg">
                     <span class="line-break hide"></span>
-                    <img alt="visa" width="39" height="26" src="https://icons.yampi.me/svg/card-visa.svg">
+                    <img alt="visa" width="39" height="26" src="./assets/card-visa.svg">
                     <span class="line-break hide"></span>
-                    <img alt="elo" width="39" height="26" src="https://icons.yampi.me/svg/card-elo.svg">
+                    <img alt="elo" width="39" height="26" src="./assets/card-elo.svg">
                     <span class="line-break hide"></span>
-                    <img alt="amex" width="39" height="26" src="https://icons.yampi.me/svg/card-amex.svg">
+                    <img alt="amex" width="39" height="26" src="./assets/card-amex.svg">
                     <span class="line-break hide"></span>
-                    <img alt="diners" width="39" height="26" src="https://icons.yampi.me/svg/card-diners.svg">
+                    <img alt="diners" width="39" height="26" src="./assets/card-diners.svg">
                     <span class="line-break hide"></span>
-                    <img alt="pix" width="39" height="26" src="https://icons.yampi.me/svg/card-pix.svg">
+                    <img alt="pix" width="39" height="26" src="./assets/card-pix.svg">
                 </div>
             </div>
             <div class="store-info-holder">

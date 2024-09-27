@@ -2,11 +2,11 @@ const formIdentify = document.getElementById('identify')
 const formName = document.getElementById('name')
 const formEmail = document.getElementById('email')
 
-formIdentify.addEventListener('focusout', (e) => { checkInputs() }, true)
-formIdentify.addEventListener('focusin', (e) => { clearInputs() }, true)
-formIdentify.addEventListener('focus', (e) => { clearInputs() }, true)
+formName.addEventListener('focusout', (e) => { checkInputs() }, true)
+//formIdentify.addEventListener('focusin', (e) => { clearInputs() }, true)
+//formIdentify.addEventListener('focus', (e) => { clearInputs() }, true)
 formIdentify.addEventListener('submit', (e) => { 
-    e.preventDefault()
+    //e.preventDefault()
     clearInputs()
  }, true)
 
@@ -19,11 +19,11 @@ function checkInputs(input, message) {
     } else {
         sucessValidation(formName)
     }
-    if(email === '') {
-        errorValidation(formEmail, "Preencha esse campo")
-    } else {
-        sucessValidation(formEmail)
-    }
+    // if(email === '') {
+    //     errorValidation(formEmail, "Preencha esse campo")
+    // } else {
+    //     sucessValidation(formEmail)
+    // }
 }
 
 function errorValidation(input, message) {
@@ -32,6 +32,7 @@ function errorValidation(input, message) {
     const icon_error = formControl.querySelector('.img-error')
     small.innerText = message
     formName.className = 'input_error'
+   // formEmail.className = 'input_error'
     icon_error.style.visibility = 'visible'
 }
 
@@ -42,6 +43,7 @@ function sucessValidation(input) {
     const icon_error = formControl.querySelector('.img-error')
     small.innerText = ''
     formName.className = 'input_sucess'
+    // formEmail.className = 'input_sucess'
     icon_error.style.visibility = 'hidden'
     icon_sucess.style.visibility = 'visible'
 }
