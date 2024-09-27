@@ -938,7 +938,7 @@ footer .-payment-list img {
     fill: rgb(0, 0, 0);
 }
 
-.hide {
+.hide, .itens-count-mobile, .resume-description, .total-cart-mobile, .icon-accordion {
     display: none;
 }
 
@@ -1081,7 +1081,7 @@ footer .-payment-list img {
         max-width: 385px;
     } 
 
-    .hide {
+    .col-mobile-hide {
         display: none;
     }
 }
@@ -1099,8 +1099,6 @@ footer .-payment-list img {
     .col-checkout-2 {
         visibility: visible;
         width: auto;
-        padding: 0;
-        margin: 0;
     }
 
     .box-model-mobile {
@@ -1113,10 +1111,6 @@ footer .-payment-list img {
         padding-right: 14px;
         width: auto;
         transition: .2s;
-    }
-
-    .hide {
-        display: none;
     }
 }
 
