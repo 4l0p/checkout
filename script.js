@@ -2,10 +2,12 @@ const formIdentify = document.getElementById('identify')
 const formName = document.getElementById('name')
 const formEmail = document.getElementById('email')
 const formCPF = document.getElementById('cpf')
+const formTEL = document.getElementById('tel')
 
 formName.addEventListener('focusout', (e) => { checkName() }, true)
 formEmail.addEventListener('focusout', (e) => { checkEmail() }, true)
-formCPF.addEventListener('focusout', (e) => { checkInputs() }, true)
+formCPF.addEventListener('focusout', (e) => { checkCPF() }, true)
+formTEL.addEventListener('focusout', (e) => { checkTEL() }, true)
 
 // formIdentify.addEventListener('submit', (e) => { 
 //     //e.preventDefault()
@@ -27,6 +29,24 @@ function checkEmail() {
         errorEmail(formEmail, "Preencha esse campo")
     } else {
         sucessEmail(formEmail)
+    }
+}
+
+function checkCPF() {
+    const cpf = formCPF.value.trim()
+    if(cpf === '') {
+        errorCPF(formCPF, "Preencha esse campo")
+    } else {
+        sucessCPF(formCPF)
+    }
+}
+
+function checkTEL() {
+    const cpf = formTEL.value.trim()
+    if(cpf === '') {
+        errorTEL(formTEL, "Preencha esse campo")
+    } else {
+        sucessTEL(formTEL)
     }
 }
 
@@ -70,12 +90,52 @@ function sucessEmail(input) {
     icon_sucess.style.visibility = 'visible'
 }
 
+function errorCPF(input, message) {
+    const formControl = input.parentElement;
+    const small = formControl.querySelector('small')
+    const icon_error = formControl.querySelector('.img-error')
+    small.innerText = message
+    formCPF.className = 'input_error'
+    icon_error.style.visibility = 'visible'
+}
+
+function sucessCPF(input) {
+    const formControl = input.parentElement;
+    const small = formControl.querySelector('small')
+    const icon_sucess = formControl.querySelector('.img-sucess')
+    const icon_error = formControl.querySelector('.img-error')
+    small.innerText = ''
+    formCPF.className = 'input_sucess'
+    icon_error.style.visibility = 'hidden'
+    icon_sucess.style.visibility = 'visible'
+}
+
+function errorTEL(input, message) {
+    const formControl = input.parentElement;
+    const small = formControl.querySelector('small')
+    const icon_error = formControl.querySelector('.img-error')
+    small.innerText = message
+    formTEL.className = 'input_error'
+    icon_error.style.visibility = 'visible'
+}
+
+function sucessTEL(input) {
+    const formControl = input.parentElement;
+    const small = formControl.querySelector('small')
+    const icon_sucess = formControl.querySelector('.img-sucess')
+    const icon_error = formControl.querySelector('.img-error')
+    small.innerText = ''
+    formTEL.className = 'input_sucess'
+    icon_error.style.visibility = 'hidden'
+    icon_sucess.style.visibility = 'visible'
+}
+
 function clearInputs(input) {
     const formControl = input.parentElement;
     const small = formControl.querySelector('small')
     const icon_sucess = formControl.querySelector('.img-sucess')
     const icon_error = formControl.querySelector('.img-error')
-    formName.className = '';
+    form.className = '';
     small.innerText = ''
     icon_error.style.visibility = 'hidden'
     icon_sucess.style.visibility = 'hidden'
