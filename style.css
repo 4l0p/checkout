@@ -330,27 +330,36 @@ button {
     width: 85%;
 }
 
+.input_error {
+    border: 1px solid rgb(255, 154, 154);
+    background-color: rgb(255, 225, 225);
+}
+
+.input_sucess {
+    border: 1px solid rgb(89, 255, 125);
+    background-color: rgb(200, 255, 200);
+}
+
 .img-sucess {
     position: absolute;
     top: 17px;
     right: 9px;
-    visibility: visible;
+    visibility: hidden;
 }
 
 .img-error {
     position: absolute;
     top: 17px;
     right: 9px;
-    visibility: visible;
+    visibility: hidden;
 }
 
 .ap1 {
     top: 11px;
 }
 
-.error-block {
+small {
     color: #e50f38;
-    display: none;
     font-size: 11px;
     line-height: 1.3;
     margin: 7px 0 0;
@@ -533,10 +542,6 @@ input[type="radio"] {
 
 /***  ORDER BUMP  ***/
 
-/*
-.order-bump {
-    border: 1px solid blue;
-} */
 .order-bump-offer {
     display: flex;
     align-items: center;
