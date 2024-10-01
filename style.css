@@ -277,7 +277,6 @@ input:focus {
 
 .flex {
     display: flex;
-    margin-top: 6px;
 }
 
 input[type=tel] {

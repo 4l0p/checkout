@@ -178,8 +178,8 @@
                                     <div class="holder-input flex">
                                         <span class="input-area-cod">+55</span>
                                         <input type="tel" id="tel" name="tel" placeholder="(00) 00000-0000">
-                                        <i class="img-sucess"><img src="assets/sucess-icon.svg" alt=""></i>
-                                        <i class="img-error"><img src="assets/erro-icon.svg" alt=""></i>
+                                        <i class="img-sucess ap1"><img src="assets/sucess-icon.svg" alt=""></i>
+                                        <i class="img-error ap1"><img src="assets/erro-icon.svg" alt=""></i>
                                         <small id="name_errors"></small>
                                     </div>
                                 </div>
@@ -198,7 +198,7 @@
                     </div>
                     <!-- /identify -->
                     <!-- address -->
-                    <div class="box-card box-model-mobile col-mobile-hide disabled">
+                    <div class="box-card box-model-mobile col-mobile-hide">
                         <div class="box-title">
                             <div class="holder-number">2</div>
                             <div class="title-card">Entrega</div>
@@ -206,39 +206,43 @@
                         <div class="desc">
                             Preencha suas informações pessoais para continuar.
                         </div>
-                        <div class="box-content hide">
+                        <div class="box-content">
                             <form action="#" method="post">
                                 <div class="form-group input-flex">
                                     <label for="cep" class="label-control">CEP</label>
                                     <div class="holder-input">
-                                        <input type="text" name="cep" placeholder="ex.: 50000-000">
+                                        <input type="text" id="cep" name="cep" placeholder="ex.: 50000-000">
                                         <i class="img-sucess"><img src="assets/sucess-icon.svg" alt=""></i>
                                         <i class="img-error"><img src="assets/erro-icon.svg" alt=""></i>
+                                        <small id="name_errors"></small>
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label for="adress" class="label-control">Endereço</label>
+                                    <label for="address" class="label-control">Endereço</label>
                                     <div class="holder-input">
-                                        <input type="text" placeholder="">
+                                        <input type="text" id="address" name="address" placeholder="">
                                         <i class="img-sucess"><img src="assets/sucess-icon.svg" alt=""></i>
                                         <i class="img-error"><img src="assets/erro-icon.svg" alt=""></i>
+                                        <small id="name_errors"></small>
                                     </div>
                                 </div>
                                 <div class="flex">
                                     <div class="form-group input-flex">
                                         <label for="number" class="label-control">Número</label>
                                         <div class="holder-input">
-                                            <input type="text" name="number">
+                                            <input type="text" id="number" name="number">
                                             <i class="img-sucess"><img src="assets/sucess-icon.svg" alt=""></i>
                                             <i class="img-error"><img src="assets/erro-icon.svg" alt=""></i>
+                                            <small id="name_errors"></small>
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <label for="bairro" class="label-control">Bairro</label>
+                                        <label for="district" class="label-control">Bairro</label>
                                         <div class="holder-input">
-                                            <input type="text" name="bairro">
+                                            <input type="text" id="district" name="district">
                                             <i class="img-sucess"><img src="assets/sucess-icon.svg" alt=""></i>
                                             <i class="img-error"><img src="assets/erro-icon.svg" alt=""></i>
+                                            <small id="name_errors"></small>
                                         </div>
                                     </div>
                                 </div>
@@ -246,15 +250,16 @@
                                     <label for="complement" class="label-control">Complemento <span
                                             class="optional">(opicional)</span> </label>
                                     <div class="holder-input">
-                                        <input type="text" name="complement">
+                                        <input type="text" id="complement" name="complement">
                                         <i class="img-sucess"><img src="assets/sucess-icon.svg" alt=""></i>
                                         <i class="img-error"><img src="assets/erro-icon.svg" alt=""></i>
+                                        <small id="name_errors"></small>
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label for="name-saved" class="label-control">Destinarário </label>
                                     <div class="holder-input">
-                                        <input type="text" name="name-saved" placeholder="José Gleu">
+                                        <input type="text" id="name-saved" name="name-saved" placeholder="José Gleu">
                                         <i class="img-sucess"><img src="assets/sucess-icon.svg" alt=""></i>
                                     </div>
                                 </div>
@@ -266,7 +271,7 @@
                     </div>
                     <!-- /address-->
                 </div>
-                <div class="col-checkout-2 col-mobile-hide col-2 disabled">
+                <div class="col-checkout-2 col-mobile-hide col-2">
                     <!-- payment -->
                     <div class="box-card box-model-mobile">
                         <div class="box-title">
@@ -276,7 +281,7 @@
                         <div class="desc">
                             Escolha uma forma de pagamento
                         </div>
-                        <div class="box-content header-bill-payment hide">
+                        <div class="box-content header-bill-payment">
                             <form action="#" method="post">
                                 <div class="card-payment">
                                     <div class="header-card-payment">
@@ -316,50 +321,61 @@
                                     <div class="form-group">
                                         <label for="card-number" class="label-control">Número do cartão</label>
                                         <div class="holder-input">
-                                            <input type="text" name="card-number" placeholder="1111 2222 3333 4444">
+                                            <input type="text" id="card-number" name="card-number" placeholder="1111 2222 3333 4444">
                                             <i class="img-sucess"><img src="assets/sucess-icon.svg" alt=""></i>
                                             <i class="img-error"><img src="assets/erro-icon.svg" alt=""></i>
+                                            <small id="name_errors"></small>
                                         </div>
                                         <div class="flex">
                                             <div class="form-group input-flex-card">
-                                                <label for="number" class="label-control">Validade <span
+                                                <label for="card-valid" class="label-control">Validade <span
                                                         class="optional">(mês/ano)</span></label>
                                                 <div class="holder-input">
-                                                    <input type="text" name="number">
+                                                    <input type="text" id="card-valid" name="card-valid">
                                                     <i class="img-sucess"><img src="assets/sucess-icon.svg" alt=""></i>
                                                     <i class="img-error"><img src="assets/erro-icon.svg" alt=""></i>
+                                                    <small id="name_errors"></small>
                                                 </div>
                                             </div>
                                             <div class="form-group">
-                                                <label for="bairro" class="label-control">Cód. de Segurança</label>
+                                                <label for="card-code" class="label-control">Cód. de Segurança</label>
                                                 <div class="holder-input">
-                                                    <input type="text" name="bairro">
+                                                    <input type="text" id="card-code" name="card-code">
                                                     <i class="img-sucess"><img src="assets/sucess-icon.svg" alt=""></i>
                                                     <i class="img-error"><img src="assets/erro-icon.svg" alt=""></i>
+                                                    <small id="name_errors"></small>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="form-group">
-                                            <label for="name" class="label-control">Nome e sobrenome do titular</label>
+                                            <label for="card-owner" class="label-control">Nome e sobrenome do titular</label>
                                             <div class="holder-input">
-                                                <input type="text" placeholder="ex.: Maria de Almeida Cruz">
+                                                <input type="text" id="card-owner" name="card-owner" placeholder="ex.: MARIA DE A CRUZ">
                                                 <i class="img-sucess"><img src="assets/sucess-icon.svg" alt=""></i>
                                                 <i class="img-error"><img src="assets/erro-icon.svg" alt=""></i>
+                                                <small id="name_errors"></small>
                                             </div>
                                             <div id="name_errors" class="error-block"></div>
                                         </div>
                                         <div class="form-group">
-                                            <label for="cpf-titular" class="label-control">CPF do titular</label>
+                                            <label for="card-cpf" class="label-control">CPF do titular</label>
                                             <div class="holder-input">
-                                                <input type="text" name="cpf-titular" placeholder="000.000.000-00">
+                                                <input type="text" id="card-cpf" name="card-cpf" placeholder="000.000.000-00">
                                                 <i class="img-sucess"><img src="assets/sucess-icon.svg" alt=""></i>
                                                 <i class="img-error"><img src="assets/erro-icon.svg" alt=""></i>
+                                                <small id="name_errors"></small>
                                             </div>
                                         </div>
                                         <div class="form-group">
                                             <label for="installments" class="label-control">Nº de Parcelas</label>
                                             <div class="holder-input flex">
-                                                <select name="installments" id=""></select>
+                                                <select name="installments" id="installments">
+                                                    <option value="">Selecione</option>
+                                                    <option value="1">1x</option>
+                                                    <option value="2">2x</option>
+                                                    <option value="3">3x</option>
+                                                    <option value="4">4x</option>
+                                                </select>
                                             </div>
                                             <span class="optional">Preencha o cartão para selecionar as parcelas </span>
                                         </div>
