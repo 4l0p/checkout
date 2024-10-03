@@ -33,10 +33,9 @@ formCardOwner.addEventListener('focusout', (e) => { checkCardOwner() }, true)
 formCardCPF.addEventListener('focusout', (e) => { checkCardCPF() }, true)
 formCardInstallments.addEventListener('click', (e) => { checkInstallments() }, true)
 
-// formIdentify.addEventListener('submit', (e) => { 
-//     //e.preventDefault()
-//     clearInputs()
-//  }, true)
+formIdentify.addEventListener('submit', (e) => { 
+    e.preventDefault()
+ }, true)
 
 function checkName() {
     const name = formName.value.trim()
