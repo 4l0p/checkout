@@ -9,7 +9,6 @@ const formNumber = document.getElementById('number')
 const formDistrict = document.getElementById('district')
 const formComplement = document.getElementById('complement')
 const formNameSaved = document.getElementById('name-saved')
-
 const formCardNumber = document.getElementById('card-number')
 const formCardValid = document.getElementById('card-valid')
 const formCardCode = document.getElementById('card-code')
@@ -27,13 +26,12 @@ formNumber.addEventListener('focusout', (e) => { checkNumber() }, true)
 formDistrict.addEventListener('focusout', (e) => { checkDistrict() }, true)
 formComplement.addEventListener('focusout', (e) => { checkComplement() }, true)
 formNameSaved.addEventListener('focusout', (e) => { checkNameSaved() }, true)
-
 formCardNumber.addEventListener('focusout', (e) => { checkCardNumber() }, true)
 formCardValid.addEventListener('focusout', (e) => { checkCardValid() }, true)
 formCardCode.addEventListener('focusout', (e) => { checkCardCode() }, true)
 formCardOwner.addEventListener('focusout', (e) => { checkCardOwner() }, true)
 formCardCPF.addEventListener('focusout', (e) => { checkCardCPF() }, true)
-formCardInstallments.addEventListener('focusout', (e) => { checkInstallments() }, true)
+formCardInstallments.addEventListener('click', (e) => { checkInstallments() }, true)
 
 // formIdentify.addEventListener('submit', (e) => { 
 //     //e.preventDefault()

@@ -1066,10 +1066,24 @@ footer .-payment-list img {
         color: #666666;
     }
 
+    .box-price-mobile {
+        width: auto;
+    }
+
     .total-cart-mobile {
         display: contents;
         color: #037803;
         font-weight: 700;
+    }
+
+    .icon-accordion {
+        display: inline;
+        margin-left: 10px;
+    }
+
+    .icon-accordion svg {
+        transform: rotate(90deg);
+        transition: transform .3s;
     }
 
     .cards .col-1 {
