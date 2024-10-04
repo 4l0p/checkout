@@ -1149,7 +1149,9 @@ footer .-payment-list img {
 
     .cards .col-2 {
         order: 2;
+        padding: 0;
     }
+    
 
     .cards .col-4 {
         order: 3;
@@ -1184,8 +1186,8 @@ footer .-payment-list img {
         border-top: 1px solid #eee;
         box-shadow: none;
         margin-top: 20px;
-        padding-left: 14px;
-        padding-right: 14px;
+        /* padding-left: 14px;
+        padding-right: 14px; */
         width: auto;
         transition: .2s;
     }
