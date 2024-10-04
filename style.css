@@ -1174,6 +1174,11 @@ footer .-payment-list img {
         display: none;
     }
 
+    .box-title,
+    .desc {
+        margin-left: 10px;
+    }
+
     .card-payment,
     .pix-payment,
     .bill-payment {
