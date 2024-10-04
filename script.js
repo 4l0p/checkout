@@ -76,7 +76,7 @@ function checkTEL() {
 function checkCEP() {
     const cep = formCEP.value.trim()
     if( cep === '') {
-        errorAddress(formCEP, "Preencha esse campo")
+        errorCEP(formCEP, "Preencha esse campo")
     } else {
         sucessCEP(formCEP)
     }
