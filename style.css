@@ -1174,6 +1174,17 @@ footer .-payment-list img {
         display: none;
     }
 
+    .card-payment,
+    .pix-payment,
+    .bill-payment {
+        margin-left: 10px;
+    }
+
+    .header-bill-payment {
+        padding: 0;
+        width: 98%;
+    }
+
     .pix-desc {
         display: flex;
         justify-content: flex-start;
@@ -1202,6 +1213,10 @@ footer .-payment-list img {
         width: auto;
     }
 
+    .box-card {
+        padding: 15px 0;
+    }
+
     .box-model-mobile {
         border: 0;
         border-radius: 0;
@@ -1210,7 +1225,7 @@ footer .-payment-list img {
         margin-top: 20px;
         /* padding-left: 14px;
         padding-right: 14px; */
-        width: auto;
+        width: 100%;
         transition: .2s;
     }
 
