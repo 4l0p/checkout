@@ -573,9 +573,14 @@ input[type="radio"] {
 }
 
 .pix-desc {
-    font-size: 14px;
-    font-weight: 600;
-    padding: 10px;
+    display: flex;
+    justify-content: flex-start;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.5;
+    color: #666666;
+    margin-left: 36px;
+    list-style-type: circle;
 }
 
 .bill-desc {
@@ -584,7 +589,15 @@ input[type="radio"] {
     padding: 12px;
 }
 
-.pix-price,
+.pix-price {
+    color: #037803;
+    font-weight: 700;
+    padding-left: 20px;
+    margin-top: 13px;
+    margin-bottom: 0px;
+    font-size: 14px;
+}
+
 .bill-price {
     color: #037803;
     font-weight: 700;
