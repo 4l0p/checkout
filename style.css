@@ -1173,6 +1173,16 @@ footer .-payment-list img {
     .col-mobile-hide {
         display: none;
     }
+
+    .pix-desc {
+        display: flex;
+        justify-content: flex-start;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 1.5;
+        color: #666666;
+        margin-left: 36px;
+    }
 }
 
 @media (max-width: 520px) {
@@ -1202,6 +1212,16 @@ footer .-payment-list img {
         padding-right: 14px; */
         width: auto;
         transition: .2s;
+    }
+
+    .pix-desc {
+        display: flex;
+        justify-content: flex-start;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 1.5;
+        color: #666666;
+        margin-left: 36px;
     }
 }
 
