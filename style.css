@@ -1047,8 +1047,9 @@ footer .-payment-list img {
         justify-content: center;
     }
 
-    header .inner-header .holder-pagseg {
-        width: 95%;
+    header .inner-header .holder-pagseg svg {
+        width: 89px;
+        height: 13px;
     }
 
     .content {
