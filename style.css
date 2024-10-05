@@ -507,6 +507,14 @@ input[type="radio"] {
 
 }
 
+.question {
+    display: inline-block;
+    background: url(./assets/question.svg) no-repeat;
+    height: 12px;
+    width: 12px;
+    position: relative;
+}
+
 .security-icon {
     height: 12px;
 }
