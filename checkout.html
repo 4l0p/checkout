@@ -148,7 +148,8 @@
                                 <div class="form-group">
                                     <label for="name" class="label-control">Nome completo</label>
                                     <div class="holder-input">
-                                        <input type="text" id="name" name="name" placeholder="ex.: Maria de Almeida Cruz">
+                                        <input type="text" id="name" name="name"
+                                            placeholder="ex.: Maria de Almeida Cruz">
                                         <i class="img-sucess"><img src="assets/sucess-icon.svg" alt=""></i>
                                         <i class="img-error"><img src="assets/erro-icon.svg" alt=""></i>
                                         <small id="name_errors"></small>
@@ -290,21 +291,19 @@
                                             <label for="credit-card" class="label-control">
                                                 <div class="label-icon-info">
                                                     <img src="assets/credit-card-flag.png" alt="">
-                                                Cartão de Crédito
+                                                    Cartão de Crédito
                                                 </div>
                                             </label>
                                         </div>
                                         <div class="cards-logo-type-payment">
-                                            <img src="./assets/card-mastercard.svg" height="20"
-                                            alt="Mastercard" class="card-icon">
-                                            <img src="./assets/card-visa.svg" height="20"
-                                                alt="Visa" class="card-icon">
-                                                <img src="./assets/card-elo.svg" height="20"
-                                                    alt="Elo" class="card-icon">
-                                            <img src="./assets/card-amex.svg" height="20"
-                                                alt="American Express" class="card-icon">
-                                                <img src="./assets/card-diners.svg" height="20"
-                                                alt="Diners" class="card-icon">
+                                            <img src="./assets/card-mastercard.svg" height="20" alt="Mastercard"
+                                                class="card-icon">
+                                            <img src="./assets/card-visa.svg" height="20" alt="Visa" class="card-icon">
+                                            <img src="./assets/card-elo.svg" height="20" alt="Elo" class="card-icon">
+                                            <img src="./assets/card-amex.svg" height="20" alt="American Express"
+                                                class="card-icon">
+                                            <img src="./assets/card-diners.svg" height="20" alt="Diners"
+                                                class="card-icon">
                                         </div>
                                     </div>
                                     <!-- credit card magic -->
@@ -326,159 +325,162 @@
                                     <div class="form-group">
                                         <label for="card-number" class="label-control">Número do cartão</label>
                                         <div class="holder-input">
-                                            <input type="text" id="card-number" name="card-number" placeholder="1111 2222 3333 4444">
+                                            <input type="text" id="card-number" name="card-number"
+                                                placeholder="1111 2222 3333 4444">
                                             <i class="img-sucess"><img src="assets/sucess-icon.svg" alt=""></i>
                                             <i class="img-error"><img src="assets/erro-icon.svg" alt=""></i>
                                             <small id="name_errors"></small>
                                         </div>
-                                        <div class="flex">
-                                            <div class="form-group input-flex-card">
-                                                <label for="card-valid" class="label-control">Validade <span
-                                                        class="optional">(mês/ano)</span></label>
-                                                <div class="holder-input">
-                                                    <input type="text" id="card-valid" name="card-valid">
-                                                    <i class="img-sucess"><img src="assets/sucess-icon.svg" alt=""></i>
-                                                    <i class="img-error"><img src="assets/erro-icon.svg" alt=""></i>
-                                                    <small id="name_errors"></small>
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="card-code" class="label-control">Cód. de Segurança</label>
-                                                <div class="holder-input">
-                                                    <input type="text" id="card-code" name="card-code">
-                                                    <i class="img-sucess"><img src="assets/sucess-icon.svg" alt=""></i>
-                                                    <i class="img-error"><img src="assets/erro-icon.svg" alt=""></i>
-                                                    <small id="name_errors"></small>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="card-owner" class="label-control">Nome e sobrenome do titular</label>
+                                    </div>
+                                    <div class="flex">
+                                        <div class="form-group input-flex-card">
+                                            <label for="card-valid" class="label-control">Validade <span
+                                                    class="optional">(mês/ano)</span></label>
                                             <div class="holder-input">
-                                                <input type="text" id="card-owner" name="card-owner" placeholder="ex.: MARIA DE A CRUZ">
-                                                <i class="img-sucess"><img src="assets/sucess-icon.svg" alt=""></i>
-                                                <i class="img-error"><img src="assets/erro-icon.svg" alt=""></i>
-                                                <small id="name_errors"></small>
-                                            </div>
-                                            <div id="name_errors" class="error-block"></div>
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="card-cpf" class="label-control">CPF do titular</label>
-                                            <div class="holder-input">
-                                                <input type="text" id="card-cpf" name="card-cpf" placeholder="000.000.000-00">
+                                                <input type="text" id="card-valid" name="card-valid">
                                                 <i class="img-sucess"><img src="assets/sucess-icon.svg" alt=""></i>
                                                 <i class="img-error"><img src="assets/erro-icon.svg" alt=""></i>
                                                 <small id="name_errors"></small>
                                             </div>
                                         </div>
                                         <div class="form-group">
-                                            <label for="installments" class="label-control">Nº de Parcelas</label>
-                                            <div class="holder-input flex">
-                                                <select name="installments" id="installments">
-                                                    <option value="">---</option>
-                                                    <option value="1">1x</option>
-                                                    <option value="2">2x</option>
-                                                    <option value="3">3x</option>
-                                                    <option value="4">4x</option>
-                                                </select>
+                                            <label for="card-code" class="label-control">Cód. de Segurança</label>
+                                            <div class="holder-input">
+                                                <input type="text" id="card-code" name="card-code">
+                                                <i class="img-sucess"><img src="assets/sucess-icon.svg" alt=""></i>
+                                                <i class="img-error"><img src="assets/erro-icon.svg" alt=""></i>
+                                                <small id="name_errors"></small>
                                             </div>
-                                            <span class="optional">Preencha o cartão para selecionar as parcelas </span>
                                         </div>
-                                        <!-- ORDER BUMP -->
-                                        <div class="order-bump">
-                                            <div class="order-bump-item">
-                                                <div class="order-bump-offer">
-                                                    <div class="order-bump-promo">
-                                                        <span class="emoji">🎉</span>
-                                                        você tem 3 ofertas!
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="card-owner" class="label-control">Nome e sobrenome do
+                                            titular</label>
+                                        <div class="holder-input">
+                                            <input type="text" id="card-owner" name="card-owner"
+                                                placeholder="ex.: MARIA DE A CRUZ">
+                                            <i class="img-sucess"><img src="assets/sucess-icon.svg" alt=""></i>
+                                            <i class="img-error"><img src="assets/erro-icon.svg" alt=""></i>
+                                            <small id="name_errors"></small>
+                                        </div>
+                                        <div id="name_errors" class="error-block"></div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="card-cpf" class="label-control">CPF do titular</label>
+                                        <div class="holder-input">
+                                            <input type="text" id="card-cpf" name="card-cpf"
+                                                placeholder="000.000.000-00">
+                                            <i class="img-sucess"><img src="assets/sucess-icon.svg" alt=""></i>
+                                            <i class="img-error"><img src="assets/erro-icon.svg" alt=""></i>
+                                            <small id="name_errors"></small>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="installments" class="label-control">Nº de Parcelas</label>
+                                        <div class="holder-input flex">
+                                            <select name="installments" id="installments">
+                                                <option value="">---</option>
+                                                <option value="1">1x</option>
+                                                <option value="2">2x</option>
+                                                <option value="3">3x</option>
+                                                <option value="4">4x</option>
+                                            </select>
+                                        </div>
+                                        <span class="optional">Preencha o cartão para selecionar as parcelas </span>
+                                    </div>
+                                    <!-- ORDER BUMP -->
+                                    <div class="order-bump">
+                                        <div class="order-bump-item">
+                                            <div class="order-bump-offer">
+                                                <div class="order-bump-promo">
+                                                    <span class="emoji">🎉</span>
+                                                    você tem 3 ofertas!
+                                                </div>
+                                                <div class="order-bump-arrows">
+                                                    <div class="arrow-bg">
+                                                        <i class="icon icon-next-prev -rotate"></i>
                                                     </div>
-                                                    <div class="order-bump-arrows">
-                                                        <div class="arrow-bg">
-                                                            <i class="icon icon-next-prev -rotate"></i>
-                                                        </div>
-                                                        <div class="arrow-bg">
-                                                            <i class="icon icon-next-prev"></i>
-                                                        </div>
+                                                    <div class="arrow-bg">
+                                                        <i class="icon icon-next-prev"></i>
                                                     </div>
                                                 </div>
+                                            </div>
 
-                                                <div class="order-bump-item-spinner">
-                                                    <!-- product 1 -->
-                                                    <div class="order-bump-prod">
-                                                        <div class="order-bump-row-prod">
-                                                            <div>
-                                                                <img src="https://images.yampi.me/assets/stores/lindacasa/uploads/images/manta-casal-lisa-decorativa-xale-boras-140m-x-200m-chocolate-648999e94f5b0-thumb.jpg"
-                                                                    alt="" class="ob-img">
-                                                            </div>
-                                                            <div class="order-bump-prod-details">
-                                                                <div class="order-bump-prod-name">Manta Casal Lisa
-                                                                    Decorativa Xale
-                                                                    Boras 1,40m x 2,00m Chocolate</div>
-                                                                <div class="order-bump-price">
-                                                                    <span class="order-bump-old-price mr5">R$
-                                                                        115,68</span>
-                                                                    <span class="order-bump-new-price bold">R$
-                                                                        99,90</span>
-                                                                </div>
-                                                            </div>
+                                            <div class="order-bump-item-spinner">
+                                                <!-- product 1 -->
+                                                <div class="order-bump-prod">
+                                                    <div class="order-bump-row-prod">
+                                                        <div>
+                                                            <img src="https://images.yampi.me/assets/stores/lindacasa/uploads/images/manta-casal-lisa-decorativa-xale-boras-140m-x-200m-chocolate-648999e94f5b0-thumb.jpg"
+                                                                alt="" class="ob-img">
                                                         </div>
-                                                        <div class="order-bump-title hide">*Promoção exclusiva*</div>
-                                                        <div class="order-bump-message hide">Ultimas peças</div>
-                                                        <div class="order-bump-button">
-                                                            <div class="order-bump-button-checkbox">
-                                                                <input type="checkbox">
+                                                        <div class="order-bump-prod-details">
+                                                            <div class="order-bump-prod-name">Manta Casal Lisa
+                                                                Decorativa Xale
+                                                                Boras 1,40m x 2,00m Chocolate</div>
+                                                            <div class="order-bump-price">
+                                                                <span class="order-bump-old-price mr5">R$
+                                                                    115,68</span>
+                                                                <span class="order-bump-new-price bold">R$
+                                                                    99,90</span>
                                                             </div>
-                                                            <div class="order-bump-button-cta">+ Adicionar oferta</div>
                                                         </div>
                                                     </div>
-                                                    <!-- /product 1 -->
-                                                    <!-- product 2 -->
-                                                    <div class="order-bump-prod hide">
-                                                        <div class="order-bump-row-prod">
-                                                            <div>
-                                                                <img src="https://images.yampi.me/assets/stores/lindacasa/uploads/images/manta-casal-lisa-decorativa-xale-boras-140m-x-200m-chocolate-648999e94f5b0-thumb.jpg"
-                                                                    alt="" class="ob-img">
-                                                            </div>
-                                                            <div class="order-bump-prod-details">
-                                                                <div class="order-bump-prod-name">Manta Casal Lisa
-                                                                    Decorativa Xale
-                                                                    Boras 1,40m x 2,00m Chocolate</div>
-                                                                <div class="order-bump-price">
-                                                                    <span class="order-bump-old-price mr5">R$
-                                                                        115,68</span>
-                                                                    <span class="order-bump-new-price bold">R$
-                                                                        99,90</span>
-                                                                </div>
-                                                            </div>
+                                                    <div class="order-bump-title hide">*Promoção exclusiva*</div>
+                                                    <div class="order-bump-message hide">Ultimas peças</div>
+                                                    <div class="order-bump-button">
+                                                        <div class="order-bump-button-checkbox">
+                                                            <input type="checkbox">
                                                         </div>
-                                                        <div class="order-bump-title hide">*Promoção exclusiva*</div>
-                                                        <div class="order-bump-message hide">Ultimas peças</div>
-                                                        <div class="order-bump-button">
-                                                            <div class="order-bump-button-checkbox">
-                                                                <input type="checkbox">
-                                                            </div>
-                                                            <div class="order-bump-button-cta">+ Adicionar oferta</div>
-                                                        </div>
+                                                        <div class="order-bump-button-cta">+ Adicionar oferta</div>
                                                     </div>
-                                                    <!-- /product 2-->
                                                 </div>
+                                                <!-- /product 1 -->
+                                                <!-- product 2 -->
+                                                <div class="order-bump-prod hide">
+                                                    <div class="order-bump-row-prod">
+                                                        <div>
+                                                            <img src="https://images.yampi.me/assets/stores/lindacasa/uploads/images/manta-casal-lisa-decorativa-xale-boras-140m-x-200m-chocolate-648999e94f5b0-thumb.jpg"
+                                                                alt="" class="ob-img">
+                                                        </div>
+                                                        <div class="order-bump-prod-details">
+                                                            <div class="order-bump-prod-name">Manta Casal Lisa
+                                                                Decorativa Xale
+                                                                Boras 1,40m x 2,00m Chocolate</div>
+                                                            <div class="order-bump-price">
+                                                                <span class="order-bump-old-price mr5">R$
+                                                                    115,68</span>
+                                                                <span class="order-bump-new-price bold">R$
+                                                                    99,90</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="order-bump-title hide">*Promoção exclusiva*</div>
+                                                    <div class="order-bump-message hide">Ultimas peças</div>
+                                                    <div class="order-bump-button">
+                                                        <div class="order-bump-button-checkbox">
+                                                            <input type="checkbox">
+                                                        </div>
+                                                        <div class="order-bump-button-cta">+ Adicionar oferta</div>
+                                                    </div>
+                                                </div>
+                                                <!-- /product 2-->
                                             </div>
                                         </div>
-                                        <!-- /ORDER BUMP -->
-                                        <div class="form-group mb">
-                                            <button>comprar agora</button>
-                                            <div class="info-security-card-pay">
-                                                <div class="security-icon">
-                                                    <img src="assets/s2.png" alt=""> Pagamento Seguro
-                                                </div>
-                                                    <div class="security-flags">
-                                                        <img src="assets/visa-sec.png" alt="">
-                                                        <img src="assets/id-sec.png" alt="">
-                                                        <img src="assets/safe-sec.png" alt="">                        
-                                                    </div>
+                                    </div>
+                                    <!-- /ORDER BUMP -->
+                                    <div class="form-group mb">
+                                        <button>comprar agora</button>
+                                        <div class="info-security-card-pay">
+                                            <div class="security-icon">
+                                                <img src="assets/s2.png" alt=""> Pagamento Seguro
+                                            </div>
+                                            <div class="security-flags">
+                                                <img src="assets/visa-sec.png" alt="">
+                                                <img src="assets/id-sec.png" alt="">
+                                                <img src="assets/safe-sec.png" alt="">
                                             </div>
                                         </div>
-
                                     </div>
                                 </div>
                                 <div class="pix-payment">
@@ -505,7 +507,7 @@
                                     </div>
                                     <div class="form-group mb">
                                         <button>
-                                           <img class="security-icon" src="assets/1.png" alt="security"> comprar agora
+                                            <img class="security-icon" src="assets/1.png" alt="security"> comprar agora
                                         </button>
                                     </div>
                                 </div>
@@ -541,10 +543,13 @@
                             </div>
                             <div class="box-price-mobile">
                                 <span class="total-cart-mobile">R$ 449,50</span>
-                                <i class="icon-accordion"> <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M1.30207 0L0 1.30478L4.27822 5.59191L0 9.87904L1.30207 11.1838L6.88235 5.59191L1.30207 0Z" fill="#000000"/>
+                                <i class="icon-accordion"> <svg width="7" height="12" viewBox="0 0 7 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M1.30207 0L0 1.30478L4.27822 5.59191L0 9.87904L1.30207 11.1838L6.88235 5.59191L1.30207 0Z"
+                                            fill="#000000" />
                                     </svg>
-                                     </i>
+                                </i>
                             </div>
                         </div>
                         <div class="box-content col-mobile-hide">
