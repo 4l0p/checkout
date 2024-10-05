@@ -509,7 +509,6 @@ input[type="radio"] {
 
 .security-icon {
     height: 12px;
-    margin-right: 5px;
 }
 
 .info-security-card-pay {
@@ -523,12 +522,13 @@ input[type="radio"] {
     font-weight: 400;
     font-size: 11px;
     color: #666;
+   display: flex;
+   align-items: center;
 }
 
 .info-security-card-pay .security-icon img {
     height: 14px;
     margin-right: 5px;
-    margin-top: 6px;
 }
 
 .info-security-card-pay .security-flags {
