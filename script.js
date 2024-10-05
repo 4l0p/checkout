@@ -65,8 +65,8 @@ function checkCPF() {
 }
 
 function checkTEL() {
-    const cpf = formTEL.value.trim()
-    if(cpf === '') {
+    const tel = formTEL.value.trim()
+    if(tel === '') {
         errorTEL(formTEL, "Preencha esse campo")
     } else {
         sucessTEL(formTEL)
@@ -242,7 +242,7 @@ function sucessCPF(input) {
 }
 
 function errorTEL(input, message) {
-    const formControl = input.parentElement;
+    const formControl = input.parentElement.parentElement;
     const small = formControl.querySelector('small')
     const icon_error = formControl.querySelector('.img-error')
     small.innerText = message
@@ -251,7 +251,7 @@ function errorTEL(input, message) {
 }
 
 function sucessTEL(input) {
-    const formControl = input.parentElement;
+    const formControl = input.parentElement.parentElement;
     const small = formControl.querySelector('small')
     const icon_sucess = formControl.querySelector('.img-sucess')
     const icon_error = formControl.querySelector('.img-error')
