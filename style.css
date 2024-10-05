@@ -522,8 +522,9 @@ input[type="radio"] {
     font-weight: 400;
     font-size: 11px;
     color: #666;
-   display: flex;
-   align-items: center;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
 }
 
 .info-security-card-pay .security-icon img {
@@ -532,7 +533,7 @@ input[type="radio"] {
 }
 
 .info-security-card-pay .security-flags {
-    margin-top: 15px;
+    margin-top: 10px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -1170,7 +1171,7 @@ footer .-payment-list img {
         display: flex;
         justify-content: center;
     }
-    
+
     .card-unknow-front {
         width: 320px !important;
     }
