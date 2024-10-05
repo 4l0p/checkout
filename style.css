@@ -1047,6 +1047,10 @@ footer .-payment-list img {
         justify-content: center;
     }
 
+    header .inner-header .holder-pagseg {
+        width: 95%;
+    }
+
     .content {
         display: flex;
         flex-direction: column;
