@@ -88,7 +88,7 @@ header .inner-header .holder-pagseg {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    width: 100%;
+    width: 99%;
 }
 
 header .inner-header .holder-pagseg .item-security {
