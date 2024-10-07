@@ -188,6 +188,10 @@ header .inner-header .holder-pagseg svg {
     font-weight: 700;
 }
 
+.container .box-content .qr-code .info-pix .mobile-info-pix {
+    display: none;       
+}
+
 .content .box-content .qr-code .info-pix .camera-info-pix {
     color: #666;
     margin-top: 39px;
@@ -218,6 +222,10 @@ header .inner-header .holder-pagseg svg {
 .content .box-content .qr-code .info-pix .price-pix span {
     color: #037803;
     font-weight: 700;
+}
+
+.content .box-content .qr-code .info-pix button {
+    display: none;
 }
 
 .content .box-content .qr-code .info-pix .gateway {
@@ -347,7 +355,6 @@ footer .-payment-list img {
     }
 
     .content {
-        display: flex;
         flex-direction: column;
         align-items: center;
     }
@@ -355,14 +362,102 @@ footer .-payment-list img {
 }
 
 
-@media (max-width: 520px) {
+@media (max-width: 800px) {
 
     body,
-    .container,
-    .cards {
+    .container {
         width: 100%;
     }
 
+    .container {
+        box-sizing: border-box;
+    }
+
+    .container .box-content {
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+
+    }
+
+    .container .box-content .timer-pix {
+        text-align: center;
+        align-items: center;
+    }
+
+    .container .box-content .timer-pix p {
+        font-size: 17px;
+        line-height: 1.53;
+    }
+
+    .container .box-content .timer-pix h1 {
+        max-width: 322px;
+    }
+
+    .content .box-content .timer-pix .wait-pix {
+        font-size: 15px;
+        padding: 12px 32px 15px;
+        justify-content: space-between;
+    }
+
+    .content .box-content .timer-pix .wait-pix svg {
+        height: 22px;
+        width: 22px;
+        vertical-align: baseline;
+    }
+
+    .container .box-content .qr-code {
+        max-width: 475px;
+        align-items: center;
+    }
+
+    .container .box-content .qr-code .info-pix {
+        max-width: 330px;
+        margin: 37px 0 15px;
+    }
+    .container .box-content .qr-code .info-pix .top-info-pix,
+    .container .box-content .qr-code .info-pix .camera-info-pix,
+    .container .box-content .qr-code .info-pix img {
+        display: none;
+    }
+
+    .content .box-content .qr-code .info-pix .price-pix {
+        margin-bottom: 16px;
+    }
+
+    .content .box-content .qr-code .info-pix button {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        border-radius: 30px;
+        background-color: #666;
+        font-weight: 700;
+        font-size: 14px;
+        padding: 14px 30px;
+        color: #fff;
+        width: 100%;
+    }
+
+    .content .box-content .qr-code .info-pix button i svg {
+        height: 16px;
+        width: 18px;
+    }
+
+    .container .box-content .qr-code .info-pix .mobile-info-pix {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    } 
+
+    .content .box-content .qr-code .info-pix .mobile-info-pix span {
+        color: #725bc2 !important;
+        font-weight: 700;
+    }
+
+    .hide {
+        display: none;
+    }
 }
 
 
