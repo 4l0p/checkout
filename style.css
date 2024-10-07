@@ -393,6 +393,7 @@ small {
     border: 1px solid black;
     border-radius: 5px;
     background-color: #f4f6f8;
+    padding: 0 8px;
 }
 
 .label-icon-info {
@@ -569,12 +570,11 @@ input[type="radio"] {
     border-radius: 5px;
 }
 
-.header-pix-payment,
+.header-pix-payment ,
 .header-bill-payment {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-right: 20px;
     font-size: 13px;
 }
 
