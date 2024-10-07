@@ -7,7 +7,6 @@ const formCEP = document.getElementById('cep')
 const formAddress = document.getElementById('address')
 const formNumber = document.getElementById('number')
 const formDistrict = document.getElementById('district')
-const formComplement = document.getElementById('complement')
 const formNameSaved = document.getElementById('name-saved')
 const formCardNumber = document.getElementById('card-number')
 const formCardValid = document.getElementById('card-valid')
@@ -24,7 +23,6 @@ formCEP.addEventListener('focusout', (e) => { checkCEP() }, true)
 formAddress.addEventListener('focusout', (e) => { checkAddress() }, true)
 formNumber.addEventListener('focusout', (e) => { checkNumber() }, true)
 formDistrict.addEventListener('focusout', (e) => { checkDistrict() }, true)
-formComplement.addEventListener('focusout', (e) => { checkComplement() }, true)
 formNameSaved.addEventListener('focusout', (e) => { checkNameSaved() }, true)
 formCardNumber.addEventListener('focusout', (e) => { checkCardNumber() }, true)
 formCardValid.addEventListener('focusout', (e) => { checkCardValid() }, true)
@@ -106,15 +104,6 @@ function checkDistrict() {
         errorDistrict(formDistrict, "Preencha esse campo")
     } else {
         sucessDistrict(formDistrict)
-    }
-}
-
-function checkComplement() {
-    const complement = formComplement.value.trim()
-    if( complement === '') {
-        errorComplement(formComplement, "Preencha esse campo")
-    } else {
-        sucessComplement(formComplement)
     }
 }
 
@@ -337,26 +326,6 @@ function sucessDistrict(input) {
     const icon_error = formControl.querySelector('.img-error')
     small.innerText = ''
     formDistrict.className = 'input_sucess'
-    icon_error.style.visibility = 'hidden'
-    icon_sucess.style.visibility = 'visible'
-}
-
-function errorComplement(input, message) {
-    const formControl = input.parentElement;
-    const small = formControl.querySelector('small')
-    const icon_error = formControl.querySelector('.img-error')
-    small.innerText = message
-    formComplement.className = 'input_error'
-    icon_error.style.visibility = 'visible'
-}
-
-function sucessComplement(input) {
-    const formControl = input.parentElement;
-    const small = formControl.querySelector('small')
-    const icon_sucess = formControl.querySelector('.img-sucess')
-    const icon_error = formControl.querySelector('.img-error')
-    small.innerText = ''
-    formComplement.className = 'input_sucess'
     icon_error.style.visibility = 'hidden'
     icon_sucess.style.visibility = 'visible'
 }
