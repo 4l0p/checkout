@@ -269,6 +269,7 @@ header .inner-header .holder-pagseg svg {
     border-radius: 4px;
     color: #333;
     font-size: 15px;
+    font-weight: 700;
     display: flex;
     align-items: center;
 }
@@ -277,11 +278,17 @@ header .inner-header .holder-pagseg svg {
     background-color: #3333330d;
 }
 
-.content .box-content .qr-code .help-pix .pix-copy-paste svg {
+.content .box-content .qr-code .help-pix .pix-copy-paste img {
+    height: 20px;
+    width: 19px;
+    margin-right: 10px;
+}
+
+/* .content .box-content .qr-code .help-pix .pix-copy-paste svg {
     height: 20px;
     width: 20px;
     margin-right: 5px;
-}
+} */
 
 .content .box-content .qr-code .help-pix .pix-copy-paste span {
     display: none;
@@ -440,10 +447,16 @@ footer .-payment-list img {
         width: 100%;
     }
 
-    .content .box-content .qr-code .info-pix button i svg {
+    .content .box-content .qr-code .info-pix button img {
+        height: 19px;
+        width: 18px;
+        vertical-align: middle;
+    }
+
+    /* .content .box-content .qr-code .info-pix button i svg {
         height: 16px;
         width: 18px;
-    }
+    } */
 
     .container .box-content .qr-code .info-pix .mobile-info-pix {
         display: flex;
