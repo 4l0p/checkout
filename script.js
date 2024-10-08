@@ -481,3 +481,39 @@ function clearInputs(input) {
     icon_sucess.style.visibility = 'hidden'
 
 }
+
+const button = document.querySelectorAll('button')
+console.log(button)
+
+button.forEach( i => {
+    i.addEventListener('click', e => {
+        e.preventDefault();
+        i.classList.add('loading')
+        if(i.querySelector('img')) {
+            i.querySelector('img').style.display = 'none'
+        } 
+        if (i.querySelector('svg')) {
+            i.querySelector('svg').style.display = 'none'
+        }
+        console.log(i)
+        setTimeout(() => {
+        i.classList.remove('loading')
+        if(i.querySelector('img')) {
+            i.querySelector('img').style.display = 'inline-flex'
+        } 
+        if (i.querySelector('svg')) {
+            i.querySelector('svg').style.display = 'inline-flex'
+        }
+        }, 3000);
+    })
+})
+
+// button.addEventListener('click', e => {
+//     e.preventDefault();
+//     button.classList.add('loading')
+//     button.querySelector('svg').style.display = 'none';
+//     setTimeout(() => {
+//         button.classList.remove('loading')
+//         button.querySelector('svg').style.display = 'inline-flex';
+//     }, 3000);
+// })

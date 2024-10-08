@@ -575,7 +575,7 @@ input[type="radio"] {
     border-radius: 5px;
 }
 
-.header-pix-payment ,
+.header-pix-payment,
 .header-bill-payment {
     display: flex;
     align-items: center;
@@ -1039,6 +1039,54 @@ footer .-payment-list img {
 .icon-accordion {
     display: none;
 }
+
+
+
+/* eventos de loading */
+
+button:hover {
+    cursor: pointer;
+}
+
+button.loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 19px;
+    pointer-events: none;
+    user-select: none;
+    opacity: .6;
+    content: '';
+    color: #00A44A;
+}
+
+button.loading::before {
+    position: absolute;
+    content: '';
+    border-radius: 100%;
+    border: 2px solid transparent;
+    border-left-color: #f1f1f1;
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    animation: spinner .4s linear infinite;
+    align-self: center;
+}
+
+
+@keyframes spinner {
+    to {
+        transform: rotate(360deg);
+    }
+
+    from {
+        transform: rotate(0deg);
+    }
+}
+
+
+/* /eventos de loading */
+
 
 /*  responsive media controls */
 
