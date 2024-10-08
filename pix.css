@@ -123,6 +123,7 @@ header .inner-header .holder-pagseg svg {
     max-width: var(--dektop-width);
     width: 100%;
     margin: 55px 0;
+    transition: .5s;
 }
 
 .content .box-content .timer-pix {
