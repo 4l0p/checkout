@@ -206,7 +206,7 @@ header .inner-header .holder-pagseg svg {
     display: flex;
 }
 
-.content .box-content .qr-code .info-pix .camera-info-pix .icon-cellphone img {
+.content .box-content .qr-code .info-pix .camera-info-pix img {
     height: 19px;
     width: 20px;
 }
@@ -217,7 +217,8 @@ header .inner-header .holder-pagseg svg {
 } */
 
 .content .box-content .qr-code .info-pix .camera-info-pix span {
-    font-size: 14px;
+    font-size: 13px;
+    font-weight: 600;
 }
 
 .content .box-content .qr-code .info-pix .price-pix {
