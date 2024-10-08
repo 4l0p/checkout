@@ -176,6 +176,7 @@ header .inner-header .holder-pagseg svg {
 .content .box-content .qr-code .info-pix {
     padding: 40px;
     background-color: #FFFFFF;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, .05);
 }
 
 .content .box-content .qr-code .info-pix .top-info-pix {
@@ -189,7 +190,7 @@ header .inner-header .holder-pagseg svg {
 }
 
 .container .box-content .qr-code .info-pix .mobile-info-pix {
-    display: none;       
+    display: none;
 }
 
 .content .box-content .qr-code .info-pix .camera-info-pix {
@@ -275,6 +276,7 @@ header .inner-header .holder-pagseg svg {
 .content .box-content .qr-code .help-pix .pix-copy-paste a:hover {
     background-color: #3333330d;
 }
+
 .content .box-content .qr-code .help-pix .pix-copy-paste svg {
     height: 20px;
     width: 20px;
@@ -396,14 +398,13 @@ footer .-payment-list img {
 
     .content .box-content .timer-pix .wait-pix {
         font-size: 15px;
-        padding: 12px 32px 15px;
-        justify-content: space-between;
+        padding: 12px 17px;
+        width: 250px;
     }
 
     .content .box-content .timer-pix .wait-pix svg {
-        height: 22px;
-        width: 22px;
-        vertical-align: baseline;
+        height: 16px;
+        width: 25px;
     }
 
     .container .box-content .qr-code {
@@ -415,9 +416,9 @@ footer .-payment-list img {
         max-width: 330px;
         margin: 37px 0 15px;
     }
+
     .container .box-content .qr-code .info-pix .top-info-pix,
-    .container .box-content .qr-code .info-pix .camera-info-pix,
-    .container .box-content .qr-code .info-pix img {
+    .container .box-content .qr-code .info-pix .camera-info-pix {
         display: none;
     }
 
@@ -448,11 +449,27 @@ footer .-payment-list img {
         display: flex;
         flex-direction: column;
         align-items: center;
-    } 
+        margin-top: 25px;
+        margin-bottom: 10px;
+    }
+
+    .container .box-content .qr-code .info-pix .mobile-info-pix div:first-child {
+        margin-bottom: 10px;
+    }
 
     .content .box-content .qr-code .info-pix .mobile-info-pix span {
         color: #725bc2 !important;
         font-weight: 700;
+    }
+
+    .content .box-content .qr-code .info-pix .gateway {
+        margin-top: 30px;
+        padding-top: 25px;
+        border-top: 1px dashed hsla(0, 0%, 40%, .3);
+    }
+
+    .content .box-content .qr-code .help-pix {
+        display: none;
     }
 
     .hide {
