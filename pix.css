@@ -209,6 +209,7 @@ header .inner-header .holder-pagseg svg {
 .content .box-content .qr-code .info-pix .camera-info-pix img {
     height: 19px;
     width: 20px;
+    margin-right: 5px;
 }
 
 /* .content .box-content .qr-code .info-pix .camera-info-pix .icon-cellphone svg {
