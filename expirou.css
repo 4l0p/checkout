@@ -228,11 +228,37 @@ footer .-payment-list img {
 
 /* media control */
 
+@media (max-width: 1200px) {
+
+    header {
+        background-color: var(--header-bg-color);
+        box-shadow: 0 0 2px 0 hsla(0, 0%, 80%, .5);
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    header .inner-header .holder-pagseg {
+        width: 99%;
+    }
+
+    header .inner-header .holder-pagseg svg {
+        height: 15px;
+    }
+
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
 @media (max-width: 520px) {
 
     .content .box-content .box-info h1 {
         font-size: 30PX;
         font-weight: 700;
+        transition: .5s;
     }
     
 }
