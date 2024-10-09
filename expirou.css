@@ -226,4 +226,14 @@ footer .-payment-list img {
     fill: rgb(0, 0, 0);
 }
 
+/* media control */
+
+@media (max-width: 520px) {
+
+    .content .box-content .box-info h1 {
+        font-size: 30PX;
+        font-weight: 700;
+    }
+    
+}
 /* end responsive media controls */
