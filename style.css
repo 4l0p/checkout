@@ -95,8 +95,7 @@ header .inner-header .holder-pagseg .item-security {
     position: relative;
 }
 
-header .inner-header .holder-pagseg svg {
-    width: 89px;
+header .inner-header .holder-pagseg img {
     height: 19px;
 }
 
@@ -150,8 +149,8 @@ header .inner-header .holder-pagseg svg {
     font-weight: 700;
 }
 
-.countdown .holder-countdown .countdown-time svg {
-    width: 14px;
+.countdown .holder-countdown .countdown-time img {
+    width: 19px;
 }
 
 /* /countdown area */
@@ -199,12 +198,38 @@ header .inner-header .holder-pagseg svg {
     background-color: var(--box-card-bg-color);
 }
 
+.box-card-ckeckout {
+    background-color: #f9fdf7;
+    border: 2px solid transparent;
+    border-radius: 30px;
+    box-sizing: border-box;
+    margin: 0 0 24px;
+    padding: 30px;
+    position: relative;
+    transition: all .2s;
+    max-width: 385px;
+    width: 100%;
+}
+
 .box-title {
     display: flex;
 }
 
 .holder-number {
     background-color: black;
+    box-sizing: border-box;
+    color: white;
+    border-radius: 50%;
+    font-size: 12px;
+    font-weight: 700;
+    height: 21px;
+    width: 21px;
+    text-align: center;
+    line-height: 22px;
+}
+
+.holder-number-checkout {
+    background-color: #36b376;
     box-sizing: border-box;
     color: white;
     border-radius: 50%;
@@ -226,6 +251,17 @@ header .inner-header .holder-pagseg svg {
     padding-left: 10px;
 }
 
+.title-card-checkout {
+    color: #36b376;
+    line-height: 21px;
+    position: relative;
+    top: 1px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 18px;
+    padding-left: 10px;
+}
+
 .desc {
     font-size: 13px;
     color: var(--text-desc);
@@ -234,15 +270,25 @@ header .inner-header .holder-pagseg svg {
     margin-bottom: 20px;
 }
 
+.box-checkout-info {
+    margin: 25px 0 0;
+}
+
+.username {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
 .form-group {
     width: 100%;
     margin: 9px 0;
     padding: 0 5px;
 }
 
-.form-group button svg {
+.form-group button img {
     margin-left: 5px;
-    vertical-align: middle;
+    height: 10px;
 }
 
 .label-control {
@@ -978,6 +1024,14 @@ input[type="radio"] {
     font-size: 13px;
 }
 
+.box-testimonial__infos .rating {
+    width: 100%;
+}
+
+.box-testimonial__infos .rating img {
+    height: 11px;
+}
+
 .black-60 {
     color: #666 !important;
 }
@@ -1027,6 +1081,10 @@ footer .-payment-list img {
 
 .security-label {
     margin-top: 25px;
+}
+
+.security-label img {
+    height: 20px;
 }
 
 .black-svg {
@@ -1231,9 +1289,11 @@ button.loading::before {
     .icon-accordion {
         display: inline;
         margin-left: 10px;
+        height: 15px;
+        vertical-align: middle;
     }
 
-    .icon-accordion svg {
+    .icon-accordion img {
         transform: rotate(90deg);
         transition: transform .3s;
     }
