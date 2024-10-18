@@ -26,7 +26,7 @@
                 </div>
                 <div class="holder-pagseg">
                     <div class="item-security">
-<img src="assets/payment-seg.png" alt="">
+                        <img src="assets/payment-seg.png" alt="">
                     </div>
                 </div>
             </div>
@@ -64,7 +64,7 @@
                 </ul>
                 <div class="col-checkout-1 col-1">
                     <!-- identify -->
-                    <div class="box-card box-model-mobile">
+                    <div class="box-card box-model-mobile active">
                         <div class="box-title">
                             <div class="holder-number">1</div>
                             <div class="title-card">Identifique-se</div>
@@ -127,15 +127,15 @@
                         </div>
                     </div>
                     <!-- IDENTIFY CHECKOUT INFO-->
-                    <div class="box-card-ckeckout hide">
+                    <div class="box-card hide">
                         <div class="box-title">
-                            <div class="holder-number-checkout">1</div>
-                            <div class="title-card-checkout">Identifique-se</div>
+                            <div class="holder-number">1</div>
+                            <div class="title-card">Identifique-se</div>
                         </div>
-                        <div class="box-checkout-info">
+                        <div class="box-checkout-user">
                             <div class="username">Jose Gleu</div>
-                            <div class="user-email">josegleu@hotmail.com</div>
-                            <div class="user-cpf">CPF 053.265.804-38</div>
+                            <div class="user-info mb5">josegleu@hotmail.com</div>
+                            <div class="user-info">CPF 053.265.804-38</div>
                         </div>
                         <div class="edit">
                             <img src="assets/pencil-edit.svg" alt="">
@@ -144,7 +144,7 @@
                     <!-- /INDENTIFY CHECKOUT INFO -->
                     <!-- /identify -->
                     <!-- address -->
-                    <div class="box-card box-model-mobile"> <!-- col-mobile-hide para ocular o mobile-->
+                    <div class="box-card box-model-mobile active"> <!-- col-mobile-hide para ocular o mobile-->
                         <div class="box-title">
                             <div class="holder-number">2</div>
                             <div class="title-card">Entrega</div>
@@ -163,57 +163,60 @@
                                         <small id="name_errors"></small>
                                     </div>
                                 </div>
-                                <div class="form-group">
-                                    <label for="address" class="label-control">Endereço</label>
-                                    <div class="holder-input">
-                                        <input type="text" id="address" name="address" placeholder="">
-                                        <i class="img-sucess"><img src="assets/sucess-icon.svg" alt=""></i>
-                                        <i class="img-error"><img src="assets/erro-icon.svg" alt=""></i>
-                                        <small id="name_errors"></small>
-                                    </div>
-                                </div>
-                                <div class="flex">
-                                    <div class="form-group input-flex">
-                                        <label for="number" class="label-control">Número</label>
+                                <div class="hide">
+                                    <div class="form-group">
+                                        <label for="address" class="label-control">Endereço</label>
                                         <div class="holder-input">
-                                            <input type="text" id="number" name="number">
+                                            <input type="text" id="address" name="address" placeholder="">
+                                            <i class="img-sucess"><img src="assets/sucess-icon.svg" alt=""></i>
+                                            <i class="img-error"><img src="assets/erro-icon.svg" alt=""></i>
+                                            <small id="name_errors"></small>
+                                        </div>
+                                    </div>
+                                    <div class="flex">
+                                        <div class="form-group input-flex">
+                                            <label for="number" class="label-control">Número</label>
+                                            <div class="holder-input">
+                                                <input type="text" id="number" name="number">
+                                                <i class="img-sucess"><img src="assets/sucess-icon.svg" alt=""></i>
+                                                <i class="img-error"><img src="assets/erro-icon.svg" alt=""></i>
+                                                <small id="name_errors"></small>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="district" class="label-control">Bairro</label>
+                                            <div class="holder-input">
+                                                <input type="text" id="district" name="district">
+                                                <i class="img-sucess"><img src="assets/sucess-icon.svg" alt=""></i>
+                                                <i class="img-error"><img src="assets/erro-icon.svg" alt=""></i>
+                                                <small id="name_errors"></small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="complement" class="label-control">Complemento <span
+                                                class="optional">(opicional)</span> </label>
+                                        <div class="holder-input">
+                                            <input type="text" id="complement" name="complement">
                                             <i class="img-sucess"><img src="assets/sucess-icon.svg" alt=""></i>
                                             <i class="img-error"><img src="assets/erro-icon.svg" alt=""></i>
                                             <small id="name_errors"></small>
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <label for="district" class="label-control">Bairro</label>
+                                        <label for="name-saved" class="label-control">Destinarário </label>
                                         <div class="holder-input">
-                                            <input type="text" id="district" name="district">
+                                            <input type="text" id="name-saved" name="name-saved" placeholder="José Gleu">
                                             <i class="img-sucess"><img src="assets/sucess-icon.svg" alt=""></i>
-                                            <i class="img-error"><img src="assets/erro-icon.svg" alt=""></i>
-                                            <small id="name_errors"></small>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="complement" class="label-control">Complemento <span
-                                            class="optional">(opicional)</span> </label>
-                                    <div class="holder-input">
-                                        <input type="text" id="complement" name="complement">
-                                        <i class="img-sucess"><img src="assets/sucess-icon.svg" alt=""></i>
-                                        <i class="img-error"><img src="assets/erro-icon.svg" alt=""></i>
-                                        <small id="name_errors"></small>
+                                    <div class="form-group">
+                                        <button>Salvar
+                                            <img src="assets/arrow.png" alt="">
+                                        </button>
                                     </div>
                                 </div>
-                                <div class="form-group">
-                                    <label for="name-saved" class="label-control">Destinarário </label>
-                                    <div class="holder-input">
-                                        <input type="text" id="name-saved" name="name-saved" placeholder="José Gleu">
-                                        <i class="img-sucess"><img src="assets/sucess-icon.svg" alt=""></i>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <button>Salvar
-                                        <img src="assets/arrow.png" alt="">
-                                    </button>
-                                </div>
+
                             </form>
                         </div>
                     </div>
@@ -221,7 +224,7 @@
                 </div>
                 <div class="col-checkout-2 col-2">
                     <!-- payment -->
-                    <div class="box-card box-model-mobile">
+                    <div class="box-card box-model-mobile active">
                         <div class="box-title">
                             <div class="holder-number">3</div>
                             <div class="title-card">Pagamento</div>
@@ -483,22 +486,23 @@
                     <!-- /payment -->
                 </div>
                 <div class="col-checkout-3">
-                    <div class="box-card-resume col-3-closed">
+                    <div class="box-card-resume closed">
                         <div class="box-title flex-mobile">
                             <div class="resume-title">
                                 <span class="title-card title-card-mobile no-bold">resumo</span>
                                 <span class="itens-count-mobile">(4)</span>
-                                <div class="resume-description">Informações da sua compra</div>
+                                <div class="resume-description closed">Informações da sua compra</div>
                             </div>
                             <div class="box-price-mobile">
                                 <span class="total-cart-mobile">R$ 449,50</span>
-                                <img class="icon-accordion" src="assets/icon-accordion.png" alt="">
+                                <img class="icon-accordion closed" src="assets/icon-accordion.png" alt="">
                             </div>
                         </div>
                         <div class="box-content col-mobile-hide">
                             <form action="#" method="post">
                                 <div class="form-group">
                                     <label for="cupom" class="label-control">Tem um cupom?</label>
+                                    <i class="block icon-promocode"></i>
                                     <div class="holder-input-cupom">
                                         <input type="text" name="cupom" class="input-cupom"
                                             placeholder="Código do cupom">
@@ -662,4 +666,5 @@
         </footer>
     </div>
 </body>
+
 </html>
