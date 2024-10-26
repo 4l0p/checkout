@@ -1510,6 +1510,10 @@ button.loading::before {
         padding: 0;
     }
 
+    .ml8 {
+        margin-left: 8px;
+    }
+
     #district {
         max-width: 96%;
         margin-left: 10px;
