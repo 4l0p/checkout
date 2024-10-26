@@ -152,9 +152,12 @@
                         <div class="desc">
                             Preencha suas informações pessoais para continuar.
                         </div>
+                        <div class="desc hide">
+                            Cadastre ou selecione um endereço
+                        </div>
                         <div class="box-content">
                             <form action="checkout.html" method="post">
-                                <div class="form-group input-flex">
+                                <div class="form-group input-flex hide">
                                     <label for="cep" class="label-control">CEP</label>
                                     <div class="holder-input">
                                         <input type="text" id="cep" name="cep" placeholder="ex.: 50000-000">
@@ -206,7 +209,8 @@
                                     <div class="form-group">
                                         <label for="name-saved" class="label-control">Destinarário </label>
                                         <div class="holder-input">
-                                            <input type="text" id="name-saved" name="name-saved" placeholder="José Gleu">
+                                            <input type="text" id="name-saved" name="name-saved"
+                                                placeholder="José Gleu">
                                             <i class="img-sucess"><img src="assets/sucess-icon.svg" alt=""></i>
                                         </div>
                                     </div>
@@ -216,10 +220,76 @@
                                         </button>
                                     </div>
                                 </div>
-
                             </form>
+                            <div class="box-address-step">
+                                <a href="javascript:" class="link-new-address">
+                                    + Novo endereço
+                                </a>
+                                <div class="box-address-info">
+                                    <label for="address">
+                                        <div><input type="radio" name="address" id=""></div>
+                                        <div class="box-full-address">
+                                            <span>Rua do Hospicio, 194 - Boa Vista
+                                                <br>
+                                                Recife - PE CEP 50.060-100
+                                            </span>
+                                        </div>
+                                        <div class="flex-top">
+                                            <a class="edit-del" href="#">
+                                                <img src="assets/pencil-edit.svg" alt="">
+                                                <span>Editar</span>
+                                            </a>
+                                            <a class="edit-del" href="">
+                                                <img src="assets/trash-edit.svg" alt="">
+                                                <span>Excluir</span>
+                                            </a>
+                                        </div>
+                                    </label>
+                                </div>
+                                <hr>
+                                <div class="f13">Escolha uma forma de entrega:</div>
+                                <div class="box-address-info">
+                                    <div>
+                                        <label for="address">
+                                            <div><input type="radio" name="address" id=""></div>
+                                            <div class="box-full-address">
+                                                <span>JADLOG - de 4 a 7 dias úteis
+                                                    <br>
+                                                    Entrega garantida
+                                                </span>
+                                            </div>
+                                            <div class="flex-price">
+                                                <span>
+                                                    R$ 9,90
+                                                </span>
+                                            </div>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <button>Salvar
+                                        <img src="assets/arrow.png" alt="">
+                                    </button>
+                                </div>
+                            </div>
                         </div>
                     </div>
+                    <!-- ADDRESS FINISH CHECKOUT INFO-->
+                    <div class="box-card hide">
+                        <div class="box-title">
+                            <div class="holder-number">2</div>
+                            <div class="title-card">entrega</div>
+                        </div>
+                        <div class="box-checkout-user">
+                            <div class="username">Jose Gleu</div>
+                            <div class="user-info mb5">josegleu@hotmail.com</div>
+                            <div class="user-info">CPF 053.265.804-38</div>
+                        </div>
+                        <div class="edit">
+                            <img src="assets/pencil-edit.svg" alt="">
+                        </div>
+                    </div>
+                    <!-- /ADDRESS FINISH CHECKOUT INFO -->
                     <!-- /address-->
                 </div>
                 <div class="col-checkout-2 col-2">

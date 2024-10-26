@@ -430,6 +430,80 @@ small {
 
 /* fim box card ativo*/
 
+/* CARDS DESATIVADOS */
+
+
+/* BOX ADDRESS STEP 2 */
+
+.cards .col-checkout-1 .box-content .link-new-address {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 500;
+    color: #666666;
+    margin: 5px 0;
+}
+
+.cards .col-checkout-1 .box-content .link-new-address:hover {
+    color: #858585 ;
+}
+
+.cards .col-checkout-1 .box-content .box-address-step {
+    font-size: 11px;
+}
+
+.cards .col-checkout-1 .box-content .box-address-step hr {
+    margin: 25px 0;
+    border-top: #cecece;
+}
+
+.f13 {
+    font-size: 13px;
+}
+
+.cards .col-checkout-1 .box-content .box-address-step .box-address-info {
+    border: 1px solid black ;
+    background-color: #f4f6f8;
+    border-radius: 5px;
+    margin: 20px 0;
+}
+
+.cards .col-checkout-1 .box-content .box-address-step .box-address-info .box-full-address {
+    width: 60%;
+}
+
+.cards .col-checkout-1 .box-content .box-address-step .box-address-info label {
+ display: flex;
+ align-items: center;
+ width: 100%;
+}
+
+.flex-top {
+    display: flex;
+    position: relative;
+    left: 17px;
+}
+
+.cards .col-checkout-1 .box-content .box-address-step .box-address-info label div a.edit-del {
+    font-size: 10px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #666666;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 5px;
+    margin-left: 2px;
+}
+
+.cards .col-checkout-1 .box-content .box-address-step .box-address-info label div a.edit-del span {
+    display: none;
+}
+
+/* FIM BOX ADDRESS STEP 2 */
+
+/* FIM CARDS DESTIVADOS */ 
+
 /* config card desabilitado*/
 
 .disabled {
@@ -1257,6 +1331,22 @@ button.loading::before {
         max-width: 500px;
     }
 
+    /* INFORMATIONS STEP 2 ADDRESS */
+
+    .cards .col-checkout-1 .box-content .box-address-step .box-address-info label div a.edit-del span {
+        display: flex;
+    }
+
+    .flex-top {
+        display: flex;
+        position: relative;
+        left: 1px;
+    }
+
+    .flex-price {
+        width: 100%;
+    }
+
     .cards .col-checkout-3 {
         order: 0;
     }
@@ -1421,11 +1511,17 @@ button.loading::before {
     }
 
     .box-card {
-        padding: 15px 0;
+        padding: 15px;
     }
 
     .form-group {
-        padding: 0 10px;
+        padding: 0;
+    }
+
+    #district {
+        max-width: 96%;
+        margin-left: 10px;
+        align-self: flex-end;
     }
 
     .box-model-mobile.active {
