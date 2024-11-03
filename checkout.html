@@ -127,7 +127,7 @@
                         </div>
                     </div>
                     <!-- IDENTIFY CHECKOUT INFO-->
-                    <div class="box-card">
+                    <div class="box-card hide">
                         <div class="box-title">
                             <div class="holder-number">1</div>
                             <div class="title-card">Identifique-se</div>
@@ -157,7 +157,7 @@
                         </div>
                         <div class="box-content">
                             <form action="checkout.html" method="post">
-                                <div class="form-group input-flex">
+                                <div class="form-group input-flex hide">
                                     <label for="cep" class="label-control">CEP</label>
                                     <div class="holder-input">
                                         <input type="text" id="cep" name="cep" placeholder="ex.: 50000-000">
@@ -166,7 +166,7 @@
                                         <small id="name_errors"></small>
                                     </div>
                                 </div>
-                                <div class="">
+                                <div class="hide">
                                     <div class="form-group">
                                         <label for="address" class="label-control">Endereço</label>
                                         <div class="holder-input">
@@ -227,7 +227,7 @@
                                 </a>
                                 <div class="box-address-info">
                                     <label for="address">
-                                        <div><input type="radio" name="address" id=""></div>
+                                        <div><input type="radio" name="address" id="" checked></div>
                                         <div class="box-full-address">
                                             <span>Rua do Hospicio, 194 - Boa Vista
                                                 <br>
@@ -254,8 +254,8 @@
                                 <div class="f13">Escolha uma forma de entrega:</div>
                                 <div class="box-address-info">
                                     <div>
-                                        <label for="address">
-                                            <div><input type="radio" name="address" id=""></div>
+                                        <label for="transport">
+                                            <div><input type="radio" name="transport" id="" checked></div>
                                             <div class="box-full-address">
                                                 <span>JADLOG - de 4 a 7 dias úteis
                                                     <br>
@@ -275,7 +275,7 @@
                         </div>
                     </div>
                     <!-- ADDRESS FINISH CHECKOUT INFO-->
-                    <div class="box-card">
+                    <div class="box-card hide">
                         <div class="box-title">
                             <div class="holder-number">2</div>
                             <div class="title-card">entrega</div>
@@ -307,12 +307,12 @@
                             Escolha uma forma de pagamento
                         </div>
                         <div class="box-content header-bill-payment">
-                            <form action="#" method="post">
+                            <form action="#">
                                 <div class="card-payment">
                                     <div class="header-card-payment">
                                         <div class="type-payment">
-                                            <input type="radio" name="credit-card" id="">
-                                            <label for="credit-card" class="label-control">
+                                            <input type="radio" name="option" id="">
+                                            <label for="option" class="label-control">
                                                 <div class="label-icon-info">
                                                     <img src="assets/credit-card-flag.png" alt="">
                                                     Cartão de Crédito
@@ -512,15 +512,16 @@
                                 <div class="pix-payment">
                                     <div class="header-pix-payment">
                                         <div class="type-payment">
-                                            <input type="radio" name="pix" id="">
-                                            <label for="pix" class="label-control">
+                                            <input type="radio" name="option" id="">
+                                            <label for="option" class="label-control">
                                                 <img src="assets/pix-sec.png" alt=""> </label>
                                         </div>
                                         <div class="off-info">
                                             <span>Aprovação imediata + 5% OFF</span>
                                         </div>
                                     </div>
-                                    <div class="pix-desc">
+
+                                    <div class="pix-desc hide">
                                         <ul>
                                             <li>30 minutos para pagar</li>
                                             <li>Pagamento à vista</li>
@@ -528,40 +529,41 @@
                                             <li>Seu pedido chegará mais rápido</li>
                                         </ul>
                                     </div>
-                                    <div class="pix-price">
+                                    <div class="pix-price hide">
                                         Valor no Pix: <span class="cart-total">R$ 427,52</span>
                                     </div>
-                                    <div class="form-group mb">
+                                    <div class="form-group mb hide">
                                         <button>
                                             <img class="security-icon" src="assets/1.png" alt="security"> comprar agora
                                         </button>
                                     </div>
+
                                 </div>
                                 <div class="bill-payment">
                                     <div class="header-bill-payment">
                                         <div class="type-payment">
-                                            <input type="radio" name="boleto" id="">
-                                            <label for="boleto" class="label-control">Boleto</label>
+                                            <input type="radio" name="option" id="">
+                                            <label for="option" class="label-control">Boleto</label>
                                         </div>
                                     </div>
-                                    <div class="bill-desc">Somente quando recebermos a confirmação, em até 48h após o
+                                    <div class="bill-desc hide">Somente quando recebermos a confirmação, em até 48h após o
                                         pagamento, seguiremos com o envio das suas compras. O prazo de entrega passa a
                                         ser contado somente após a confirmação do pagamento.</div>
-                                    <div class="bill-price">
+                                    <div class="bill-price hide">
                                         Valor no boleto: <span class="cart-total">R$ 449,50</span>
                                     </div>
-                                    <div class="form-group mb">
+                                    <div class="form-group mb hide">
                                         <button>comprar agora</button>
                                     </div>
                                 </div>
                             </form>
+                            </div>
                         </div>
+                        <!-- /payment -->
                     </div>
-                    <!-- /payment -->
-                </div>
-                <div class="col-checkout-3">
-                    <div class="box-card-resume closed">
-                        <div class="box-title flex-mobile">
+                    <div class="col-checkout-3">
+                        <div class="box-card-resume closed">
+                            <div class="box-title flex-mobile">
                             <div class="resume-title">
                                 <span class="title-card title-card-mobile no-bold">resumo</span>
                                 <span class="itens-count-mobile">(4)</span>
@@ -602,9 +604,9 @@
                             <div class="container-cart-resume">
                                 <div class="item-image">
                                     <img src="https://cdn.shopify.com/s/files/1/0731/0776/7569/files/MRMAVERICK-1650_ebc67117-7d53-41fb-ab1b-f800dc501243_250x250.jpg"
-                                        alt="Camiseta Algodão Egípcio" class="thumb-product">
+                                    alt="Camiseta Algodão Egípcio" class="thumb-product">
                                 </div>
-
+                                
                                 <div class="item-detail">
                                     <div class="item-row">
                                         <div class="item-name">Camiseta Algodão Egípcio</div>
@@ -615,7 +617,7 @@
                                         <span class="item-variation">Cor: Branco</span>
                                         <span class="item-variation">Estilo (Logo Marca Peitoral): Com logo</span>
                                     </div>
-
+                                    
                                     <div class="item-row">
                                         <span class="item-price"> R$ 449,50</span>
                                     </div>
@@ -625,7 +627,7 @@
                                                 <a href="javascript:" class="switch-control less">
                                                     <i class="icon icon-less"></i>
                                                 </a>
-
+                                                
                                                 <a href="javascript:" class="switch-control more">
                                                     <i class="icon icon-more"></i>
                                                 </a>
