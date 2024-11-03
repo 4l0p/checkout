@@ -480,6 +480,10 @@ small {
     width: 52%;
 }
 
+.cards .col-checkout-1 .box-content .box-address-step .box-address-info label .box-full-address span img{
+    height: 13px;
+}
+
 .cards .col-checkout-1 .box-content .box-address-step .box-address-info label .box-options {
     width: 20%;
     display: flex;
