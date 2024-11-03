@@ -1463,15 +1463,14 @@ button.loading::before {
         margin-left: 10px;
     }
 
-    .card-payment,
+    /* .card-payment,
     .pix-payment,
     .bill-payment {
-        margin-left: 10px;
-    }
+        margin-left: 5px;
+    } */
 
     .header-bill-payment {
         padding: 0;
-        width: 98%;
     }
 
     .pix-desc {
