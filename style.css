@@ -559,6 +559,17 @@ input[type="radio"] {
     margin-left: 45px;
 }
 
+.types-payment-logo {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.types-payment-logo img {
+    height: 25px;
+    margin-right: 5px;
+}
+
 .optional {
     font-size: 11px;
     color: #818181;
