@@ -517,3 +517,25 @@ button.forEach( i => {
 //         button.querySelector('svg').style.display = 'inline-flex';
 //     }, 3000);
 // })
+
+
+const arrowToggle = document.querySelector('.icon-accordion')
+
+arrowToggle.addEventListener('click', () => {
+    toggleMode()
+})
+
+function toggleMode() {
+    const boxCardResume = document.querySelector('.box-card-resume')
+    boxCardResume.classList.toggle("closed")
+    const cardResume = document.querySelector("#resume-toggle")
+    
+    if (boxCardResume.classList.contains("closed")) {
+        arrowToggle.classList.add('closed')
+        cardResume.classList.add("col-mobile-hide")
+    } else {
+        boxCardResume.classList.remove("closed")
+        arrowToggle.classList.remove('closed')
+        cardResume.classList.remove("col-mobile-hide")
+    }
+  }

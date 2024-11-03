@@ -1348,7 +1348,7 @@ button.loading::before {
         background-color: #e3e8ed;
         padding: 9px 20px 7px 7px;
         box-shadow: 0 0px 2px rgba(0, 0, 0, .05);
-        transition: .5s;
+        transition: transform .3s;
         width: 100%;
     } 
 
@@ -1426,6 +1426,7 @@ button.loading::before {
         height: 15px;
         vertical-align: baseline;
         transform: rotate(180deg);
+        transition: transform .3s;
     }
 
     .icon-accordion:not(.closed) {
