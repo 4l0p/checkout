@@ -463,7 +463,7 @@ small {
 }
 
 .cards .col-checkout-1 .box-content .box-address-step .box-address-info {
-    border: 1px solid black ;
+    border: 1px solid #818181;
     background-color: #f4f6f8;
     border-radius: 5px;
     margin: 20px 0;
@@ -523,7 +523,7 @@ small {
 /* payment info */
 
 .card-payment {
-    border: 1px solid black;
+    border: 1px solid #818181;
     border-radius: 5px;
     background-color: #f4f6f8;
     padding: 0 8px;
@@ -697,7 +697,7 @@ input[type="radio"] {
 
 .pix-payment,
 .bill-payment {
-    border: 1px solid black;
+    border: 1px solid #818181;
     margin-top: 15px;
     background-color: #f4f6f8;
     border-radius: 5px;
