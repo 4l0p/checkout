@@ -182,7 +182,8 @@ header .inner-header .holder-pagseg img {
 
 .col-checkout-4 {
     float: right;
-    width: 29.6%;
+    width: 29.5%;
+    margin-right: 5px;
 }
 
 
