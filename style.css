@@ -1457,6 +1457,7 @@ button.loading::before {
     .cards .col-4 {
         order: 3;
         max-width: 385px;
+        margin-right: 0;
     }
 
     .box-title,
