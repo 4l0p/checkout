@@ -1363,12 +1363,13 @@ button.loading::before {
         background-color: #e3e8ed;
         padding: 9px 20px 7px 7px;
         box-shadow: 0 0px 2px rgba(0, 0, 0, .05);
-        transition: transform .3s;
+        transition: .3s;
         width: 100%;
     } 
 
     .cards .col-checkout-3 .box-card-resume:not(.closed) {
         background-color: #ffffff;
+        transition: .3s;
     }
 
     .cards .col-checkout-3 .box-card-resume .resume-description.closed {
