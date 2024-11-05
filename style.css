@@ -716,6 +716,7 @@ input[type="radio"] {
     margin-top: 15px;
     background-color: #f4f6f8;
     border-radius: 5px;
+    padding: 5px 15px;
 }
 
 .header-pix-payment,
@@ -900,8 +901,6 @@ input[type="radio"] {
     font-weight: 500;
 
 }
-
-
 
 /** /ORDER BUMP ***/
 
