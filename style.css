@@ -911,7 +911,7 @@ input[type="radio"] {
 .box-card-resume {
     margin-top: 24px;
     border-radius: 30px;
-    padding: 30px;
+    padding: 9px 30px 15px;
     background-color: var(--box-card-bg-color);
     box-shadow: 0 4px 12px rgba(0, 0, 0, .05);
 }
@@ -1361,7 +1361,7 @@ button.loading::before {
 
     .cards .col-checkout-3 .box-card-resume.closed {
         background-color: #e3e8ed;
-        padding: 9px 20px 7px 7px;
+        padding: 9px 30px 7px 30px;
         box-shadow: 0 0px 2px rgba(0, 0, 0, .05);
         transition: .3s;
         width: 100%;
@@ -1447,6 +1447,7 @@ button.loading::before {
 
     .icon-accordion:not(.closed) {
         display: inline;
+        margin-left: 10px;
         height: 15px;
         vertical-align: baseline;
         transform: rotate(0deg);
