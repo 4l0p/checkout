@@ -555,6 +555,16 @@ function toggleMode() {
             e.value += '-'
         }
     })
+    e.addEventListener('beforeinput', () => {
+        const cpfLength = e.value.length
+    
+        if (cpfLength === 3 || cpfLength === 7 ) {
+            e.value += '.'
+        }
+        if (cpfLength === 11) {
+            e.value += '-'
+        }
+    })
   })
 
 
