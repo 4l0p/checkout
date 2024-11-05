@@ -555,6 +555,9 @@ function toggleMode() {
             e.value += '-'
         }
     })
+  })
+
+  cpf.forEach( e => {
     e.addEventListener('beforeinput', () => {
         const cpfLength = e.value.length
     
@@ -566,7 +569,6 @@ function toggleMode() {
         }
     })
   })
-
 
   const tel = document.querySelector('#tel')
 
