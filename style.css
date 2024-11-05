@@ -984,8 +984,13 @@ input[type="radio"] {
 
 .container-cart-resume {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     margin-top: 25px;
+}
+
+.cart-resume-item {
+    display: flex;
+    flex-direction: row;
 }
 
 .item-image {
