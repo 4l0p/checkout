@@ -543,6 +543,7 @@ function toggleMode() {
   // FORMATACAO INPUTS
 
   const cpf = document.querySelectorAll('#cpf')
+  const tel = document.querySelector('#tel')
 
   cpf.forEach( e => {
     e.addEventListener('keypress', () => {
@@ -550,27 +551,17 @@ function toggleMode() {
     
         if (cpfLength === 3 || cpfLength === 7 ) {
             e.value += '.'
-        }
-        if (cpfLength === 11) {
+            console.log(e.value)
+        } else if (cpfLength === 11) {
             e.value += '-'
+            console.log(e.value)
+        }
+        if (cpfLength === 14) {
+            tel.focus()
+            console.log(e.value)
         }
     })
   })
-
-  cpf.forEach( e => {
-    e.addEventListener('beforeinput', () => {
-        const cpfLength = e.value.length
-    
-        if (cpfLength === 3 || cpfLength === 7 ) {
-            e.value += '.'
-        }
-        if (cpfLength === 11) {
-            e.value += '-'
-        }
-    })
-  })
-
-  const tel = document.querySelector('#tel')
 
   tel.addEventListener('keypress', () => {
     const telLength = tel.value.length
