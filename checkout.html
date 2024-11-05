@@ -100,7 +100,7 @@
                                     <label for="cpf" class="label-control">CPF</label>
                                     <div class="holder-input input-flex">
                                         <input type="text" id="cpf" name="cpf" placeholder="000.000.000-00"
-                                            maxlength="14">
+                                            maxlength="14" autocomplete="off">
                                         <i class="img-sucess"><img src="assets/sucess-icon.svg" alt=""></i>
                                         <i class="img-error"><img src="assets/erro-icon.svg" alt=""></i>
                                         <small id="name_errors"></small>
@@ -111,7 +111,7 @@
                                     <div class="holder-input">
                                         <div class="flex-tel">
                                             <span class="input-area-cod">+55</span>
-                                            <input type="tel" id="tel" name="tel" placeholder="(00) 00000-0000">
+                                            <input type="tel" id="tel" name="tel" placeholder="(00) 00000-0000" maxlength="15">
                                         </div>
                                         <i class="img-sucess ap1"><img src="assets/sucess-icon.svg" alt=""></i>
                                         <i class="img-error ap1"><img src="assets/erro-icon.svg" alt=""></i>
@@ -165,16 +165,16 @@
                         </div>
                         <div class="box-content">
                             <form action="checkout.html" method="post">
-                                <div class="form-group input-flex hide">
+                                <div class="form-group input-flex">
                                     <label for="cep" class="label-control">CEP</label>
                                     <div class="holder-input">
-                                        <input type="text" id="cep" name="cep" placeholder="ex.: 50000-000">
+                                        <input type="text" id="cep" name="cep" placeholder="ex.: 50.000-000" maxlength="10">
                                         <i class="img-sucess"><img src="assets/sucess-icon.svg" alt=""></i>
                                         <i class="img-error"><img src="assets/erro-icon.svg" alt=""></i>
                                         <small id="name_errors"></small>
                                     </div>
                                 </div>
-                                <div class="hide">
+                                <div class="">
                                     <div class="form-group">
                                         <label for="address" class="label-control">Endereço</label>
                                         <div class="holder-input">
@@ -372,7 +372,7 @@
                                         <label for="card-number" class="label-control">Número do cartão</label>
                                         <div class="holder-input">
                                             <input type="text" id="card-number" name="card-number"
-                                                placeholder="1111 2222 3333 4444">
+                                                placeholder="1111 2222 3333 4444" maxlength="19">
                                             <i class="img-sucess"><img src="assets/sucess-icon.svg" alt=""></i>
                                             <i class="img-error"><img src="assets/erro-icon.svg" alt=""></i>
                                             <small id="name_errors"></small>
@@ -383,7 +383,7 @@
                                             <label for="card-valid" class="label-control">Validade <span
                                                     class="optional">(mês/ano)</span></label>
                                             <div class="holder-input">
-                                                <input type="text" id="card-valid" name="card-valid">
+                                                <input type="text" id="card-valid" name="card-valid" maxlength="5">
                                                 <i class="img-sucess"><img src="assets/sucess-icon.svg" alt=""></i>
                                                 <i class="img-error"><img src="assets/erro-icon.svg" alt=""></i>
                                                 <small id="name_errors"></small>
@@ -416,8 +416,8 @@
                                     <div class="form-group">
                                         <label for="card-cpf" class="label-control">CPF do titular</label>
                                         <div class="holder-input">
-                                            <input type="text" id="card-cpf" name="card-cpf"
-                                                placeholder="000.000.000-00">
+                                            <input type="text" id="cpf" name="card-cpf"
+                                                placeholder="000.000.000-00" maxlength="14" autocomplete="off">
                                             <i class="img-sucess"><img src="assets/sucess-icon.svg" alt=""></i>
                                             <i class="img-error"><img src="assets/erro-icon.svg" alt=""></i>
                                             <small id="name_errors"></small>

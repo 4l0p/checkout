@@ -12,7 +12,7 @@ const formCardNumber = document.getElementById('card-number')
 const formCardValid = document.getElementById('card-valid')
 const formCardCode = document.getElementById('card-code')
 const formCardOwner = document.getElementById('card-owner')
-const formCardCPF = document.getElementById('card-cpf')
+const formCardCPF = document.getElementById('cpf')
 const formCardInstallments = document.getElementById('installments')
 
 formName.addEventListener('focusout', (e) => { checkName() }, true)
@@ -539,3 +539,71 @@ function toggleMode() {
         cardResume.classList.remove("col-mobile-hide")
     }
   }
+
+  // FORMATACAO INPUTS
+
+  const cpf = document.querySelectorAll('#cpf')
+
+  cpf.forEach( e => {
+    e.addEventListener('keypress', () => {
+        const cpfLength = e.value.length
+    
+        if (cpfLength === 3 || cpfLength === 7 ) {
+            e.value += '.'
+        }
+        if (cpfLength === 11) {
+            e.value += '-'
+        }
+    })
+  })
+
+
+  const tel = document.querySelector('#tel')
+
+  tel.addEventListener('keypress', () => {
+    const telLength = tel.value.length
+
+    if (telLength === 0) {
+        tel.value += '('
+    }
+    if (telLength === 3) {
+        tel.value += ')'
+        tel.value += ' '
+    }
+    if (telLength === 10) {
+        tel.value += '-'
+    }
+})
+
+const cep = document.querySelector('#cep')
+
+cep.addEventListener('keypress', () => {
+    const cepLength = cep.value.length
+
+    if (cepLength === 2) {
+        cep.value += '.'
+    }
+    if (cepLength === 6) {
+        cep.value += '-'
+    }
+})
+  
+const cardNumber = document.querySelector('#card-number')
+
+cardNumber.addEventListener('keypress', () => {
+    const cardNumberLength = cardNumber.value.length
+
+    if (cardNumberLength === 4 || cardNumberLength === 9 || cardNumberLength === 14) {
+        cardNumber.value += ' '
+    }
+})
+  
+const cardValid = document.querySelector('#card-valid')
+
+cardValid.addEventListener('keypress', () => {
+    const cardValidLength = cardValid.value.length
+
+    if (cardValidLength === 2) {
+        cardValid.value += '/'
+    }
+})
