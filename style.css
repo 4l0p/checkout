@@ -729,13 +729,13 @@ input[type="radio"] {
 }
 
 .off-info {
-    background-color: #04bd23;
-    color: #FFFFFF;
-    padding: 3.5px;
-    border-radius: 10px;
+    background-color: #daff3f;
+    color: #000000;
+    padding: 5px;
+    border-radius: 5px;
     font-size: 10px;
-    font-weight: 600;
-    text-transform: uppercase;
+    font-weight: 500;
+    text-transform: capitalize;
     margin-right: 10px;
 }
 
