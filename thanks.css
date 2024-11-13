@@ -251,6 +251,39 @@ p, address {
     font-weight: 600;
 }
 
+.content .col-main .main .box-help {
+    margin: 35px 0 30px 0;
+    padding: 0 0 40px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 560px;
+    border-bottom: var(--border-color-thanks);
+}
+
+.content .col-main .main .box-help .help-link {
+    font-size: 13px;
+    color: rgb(51, 51, 51);
+}
+
+.content .col-main .main .box-help .help-link a {
+    color: rgb(51, 51, 51);
+}
+
+.content .col-main .main .box-help .link-home {
+    background-color: #2d714f;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.content .col-main .main .box-help .link-home a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 20px;
+}
+
 .flex-space {
     display: flex;
     justify-content: space-between;
@@ -277,7 +310,55 @@ p, address {
 }
 
 .content .col-section .section {
-    padding: 3.8rem;
+    padding: 3.8rem 0 0 3.8rem;
+    width: 560px;
+    position: fixed;
+}
+
+.content .col-section .section .list-order {
+    display: flex;
+    flex-direction: column;
+}
+
+.content .col-section .section .list-order .info-product {
+    display: flex;
+    justify-content: flex-start;
+    align-items: start ;
+}
+
+.content .col-section .section .list-order .info-product .ip-img {
+    padding: 0 8px;
+    background-color: #e9e9e9;
+    border: var(--border-color-thanks);
+    display: flex;
+    justify-content: center;
+    border-radius: 3px;
+}
+
+.content .col-section .section .list-order .info-product .ip-desc {
+    padding: 20px;
+}
+
+.content .col-section .section .list-order .info-product .ip-price {
+    padding: 20px;
+    margin-left: 30px;
+}
+
+
+.content .col-section .section .list-order .list-order-grid {
+    display: flex;
+    margin-top: 15px;
+    justify-content: space-between;
+    width: 414px;
+}
+
+.content .col-section .section .list-order .list-order-grid .grid-info {
+    line-height: 2.5;
+    text-align: right;
+}
+
+.pd20 {
+    padding-right: 20px;
 }
 
 /* footer */
