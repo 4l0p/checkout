@@ -315,6 +315,7 @@ address {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    margin-top: 15px;
 }
 
 .content .col-section .section .list-order .info-product .ip-img {
