@@ -1,11 +1,12 @@
 const arrowToggle = document.querySelector('.icon-accordion')
+const listOrder = document.querySelector('.list-order')
+listOrder.classList.toggle("hide")
 
 arrowToggle.addEventListener('click', () => {
     toggleModeThanks()
 })
 
 function toggleModeThanks() {
-    const listOrder = document.querySelector('.list-order')
     listOrder.classList.toggle("hide")
     //const cardResume = document.querySelector("#resume-toggle")
     
