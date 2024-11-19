@@ -339,7 +339,6 @@ address {
     display: flex;
     margin-top: 15px;
     justify-content: space-between;
-    width: 414px;
 }
 
 .content .col-section .section .list-order .list-order-grid .grid-info {
