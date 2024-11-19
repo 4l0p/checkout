@@ -292,18 +292,23 @@ address {
     width: 50%;
 }
 
-.content .col-section .order-resume:not(.active) {
-    display: none;
-    background-color: #f5f5f5;
+.content .col-section {
+    display: flex;
+    justify-content: center;
 }
 
 .content .col-section .section {
     padding: 3.8rem 0 0 3.8rem;
 }
 
+.content .col-section .section .order-resume {
+    display: none;
+    background-color: #f5f5f5;
+}
 .content .col-section .section .list-order {
     display: flex;
     flex-direction: column;
+    transition: all .2s;
 }
 
 .content .col-section .section .list-order .info-product {
@@ -324,6 +329,10 @@ address {
 .content .col-section .section .list-order .info-product .ip-desc {
    margin: 0 25px;
 }
+
+.content .col-section .section .list-order .list-order-grid .ip-desc {
+    margin: 0 100px;
+ }
 
 /* .content .col-section .section .list-order .info-product .ip-price {
 
@@ -484,23 +493,34 @@ footer .-payment-list img {
         display: flex;
         justify-content: center;
         align-items: center;
+        width: 100%;
+        transition: all .2s;
     }
 
     .content .col-section .section {
         padding: 0;
         position: relative;
+        width: 100%;
+        transition: .5s;
     }
 
-    .content .col-section .order-resume.active {
+    .content .col-section .section .order-resume {
         display: flex;
         min-height: 65px;
         align-items: center;
         width: 100%;
-       justify-content: space-between;
+        justify-content: space-around;
+        transition: all .2s;
 
     }
 
-    .content .col-section .order-resume .icon-accordion.closed {
+    .content .col-section .section .order-resume .order-resume-control {
+        display: flex;
+        justify-content: space-between;
+        transition: all .2s;
+    }
+
+    .content .col-section .section .order-resume .order-resume-control .icon-accordion.closed {
         display: inline;
         margin-left: 10px;
         height: 15px;
@@ -517,6 +537,19 @@ footer .-payment-list img {
         transform: rotate(0deg);
         transition: transform .3s;
     }
+
+    .content .col-section .section .list-order.hide {
+        display: none;
+        transition: all .2s;
+    }
+
+    .content .col-section .section .list-order .info-product {
+        justify-content: center;
+    }
+
+    .content .col-section .section .list-order .list-order-grid {
+        justify-content: center;   
+       }
 }
 
 @media (max-width: 520px) {
@@ -527,10 +560,6 @@ footer .-payment-list img {
 
     .content .col-main .main .box-help .link-home {
         padding: 15px;
-    }
-
-    .content .col-section .section .list-order .list-order-grid {
-        padding-left: 5px;
     }
 
 }
