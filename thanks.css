@@ -434,28 +434,28 @@ footer .-payment-list img {
     /* FONTS SIZE H MOBILE */
     
     h2 {
-        font-size: 20px;
+        font-size: 18px;
         font-weight: 500;
     }
     
     h3 {
-        font-size: 16px;
+        font-size: 14px;
         font-weight: 500;
     }
     
     h4 {
-        font-size: 14px;
+        font-size: 12px;
         font-weight: 500;
     }
     
     p,
     address {
-        font-size: 13px;
+        font-size: 11px;
         font-style: normal;
     }
 
     /* END FONTS SIZE*/
-    
+
     .content {
      flex-direction: column;
     }
