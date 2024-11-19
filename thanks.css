@@ -309,7 +309,7 @@ address {
 .content .col-section .section .list-order .info-product {
     display: flex;
     justify-content: flex-start;
-    align-items: start;
+    align-items: center;
 }
 
 .content .col-section .section .list-order .info-product .ip-img {
@@ -322,13 +322,12 @@ address {
 }
 
 .content .col-section .section .list-order .info-product .ip-desc {
-    padding: 20px;
+   margin: 0 25px;
 }
 
-.content .col-section .section .list-order .info-product .ip-price {
-    padding: 20px;
-    margin-left: 30px;
-}
+/* .content .col-section .section .list-order .info-product .ip-price {
+
+} */
 
 
 .content .col-section .section .list-order .list-order-grid {
@@ -498,7 +497,7 @@ footer .-payment-list img {
         align-items: center;
         width: 100%;
        justify-content: space-between;
-        padding: 0 10px;
+
     }
 
     .content .col-section .order-resume .icon-accordion.closed {
@@ -528,6 +527,10 @@ footer .-payment-list img {
 
     .content .col-main .main .box-help .link-home {
         padding: 15px;
+    }
+
+    .content .col-section .section .list-order .list-order-grid {
+        padding-left: 5px;
     }
 
 }
