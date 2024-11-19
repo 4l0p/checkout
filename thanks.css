@@ -526,6 +526,10 @@ footer .-payment-list img {
         padding: 0;
     }
 
+    .content .col-main .main .box-help .link-home {
+        padding: 15px;
+    }
+
 }
 
 /* end responsive media controls */
