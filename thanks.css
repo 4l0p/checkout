@@ -292,10 +292,6 @@ address {
     width: 50%;
 }
 
-.content .col-section {
-    width: auto;
-}
-
 .content .col-section .order-resume:not(.active) {
     display: none;
     background-color: #f5f5f5;
