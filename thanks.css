@@ -562,12 +562,12 @@ footer .-payment-list img {
     }
 
     .content .col-main .main .box-help .link-home {
-        padding: 10px;
+        padding: 5px 10px 7px 10px;
     }
 
     .content .col-main .main .box-help .link-home a {
         font-size: 11px;
-        padding: 7px;
+        padding: 5px;
     }
 
 }
