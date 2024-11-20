@@ -561,12 +561,20 @@ footer .-payment-list img {
         padding: 0;
     }
 
+    .content .col-main .main .box-satisfaction .box-submit button {
+        padding: 5px 20px;
+    }
+
+    .content .col-main .main .box-help .help-link {
+        font-size: 10px;
+    }
+
     .content .col-main .main .box-help .link-home {
-        padding: 2px 11px 6px 10px;
+        padding: 5px 11px 9px 10px;
     }
 
     .content .col-main .main .box-help .link-home a {
-        font-size: 9px;
+        font-size: 10px;
         padding: 0;
     }
 
