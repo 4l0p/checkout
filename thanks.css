@@ -263,14 +263,14 @@ address {
 .content .col-main .main .box-help .link-home {
     background-color: #00A44A;
     border-radius: 30px;
-    padding: 13px;
+    padding: 11px;
 }
 
 .content .col-main .main .box-help .link-home a {
     color: #FFFFFF;
     text-decoration: none;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 12px;
     padding: 20px;
     text-transform: uppercase;
 }
@@ -562,7 +562,12 @@ footer .-payment-list img {
     }
 
     .content .col-main .main .box-help .link-home {
-        padding: 15px;
+        padding: 10px;
+    }
+
+    .content .col-main .main .box-help .link-home a {
+        font-size: 11px;
+        padding: 7px;
     }
 
 }
