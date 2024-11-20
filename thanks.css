@@ -20,7 +20,7 @@
     --ob-border-color: #d1d1d1;
     --ob-btn-bg-color: #fe509c;
     --ob-btn-txt-color: #FFFFFF;
-    --border-color-thanks: 1px solid hsl(0, 0%, 87%);
+    --border-color-thanks: 2px solid hsl(0deg 0% 52.9%);
 
     /* fonts **/
     --font-main: Helvetica;
@@ -169,7 +169,7 @@ address {
     width: 100%;
     height: 200px;
     border: var(--border-color-thanks);
-    border-radius: 5px 5px 0 0;
+    border-radius: 40px 40px 0 0;
 }
 
 .content .col-main .main .box-maps .alert-order {
@@ -195,7 +195,7 @@ address {
 
 .content .col-main .main .box-satisfaction {
     border: var(--border-color-thanks);
-    border-radius: 5px;
+    border-radius: 5px 5px 40px 40px;
     margin-top: 20px;
     padding: 14px;
 }
@@ -228,14 +228,14 @@ address {
 
 .content .col-main .main .box-satisfaction .box-submit {
     width: 100%;
-    text-align: end;
+    text-align: center;
     margin-top: 11px;
 }
 
 .content .col-main .main .box-satisfaction .box-submit button {
-    padding: 15px 50px;
+    padding: 10px 50px;
     border: var(--border-color-thanks);
-    border-radius: 5px;
+    border-radius: 30px;
     font-size: 13px;
     letter-spacing: .3px;
     color: #666666;
@@ -248,7 +248,7 @@ address {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: var(--border-color-thanks);
+    border-bottom: 1px solid hsl(0, 0%, 87%) ;
 }
 
 .content .col-main .main .box-help .help-link {
@@ -261,9 +261,9 @@ address {
 }
 
 .content .col-main .main .box-help .link-home {
-    background-color: #2d714f;
-    border-radius: 5px;
-    padding: 20px;
+    background-color: #00A44A;
+    border-radius: 30px;
+    padding: 13px;
 }
 
 .content .col-main .main .box-help .link-home a {
@@ -272,6 +272,7 @@ address {
     font-weight: 500;
     font-size: 14px;
     padding: 20px;
+    text-transform: uppercase;
 }
 
 .flex-space {
